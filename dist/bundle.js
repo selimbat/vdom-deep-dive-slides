@@ -14,8 +14,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
-/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
+/* harmony import */ var _slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/DemoSlide */ "./src/components/slides/DemoSlide.tsx");
+/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
+/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
+
 
 
 
@@ -26,7 +28,235 @@ class App extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Componen
       className: "reveal"
     }, MyLib.jsx("div", {
       className: "slides"
-    }, MyLib.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null), MyLib.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+    }, MyLib.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), MyLib.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), MyLib.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/demo/NewItemForm.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/demo/NewItemForm.tsx ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ NewItemForm)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+
+const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class NewItemForm extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  state = {
+    name: ''
+  };
+  render() {
+    const styles = {
+      form: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+      },
+      label: {
+        fontSize: '3rem',
+        padding: '2rem'
+      },
+      input: {
+        width: '120%',
+        fontSize: 'inherit'
+      }
+    };
+    return MyLib.jsx("form", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.form),
+      key: "new-item-form",
+      onsubmit: e => {
+        e.preventDefault();
+        if (this.state.name) {
+          this.props.addItem(this.state.name);
+          this.setState(() => ({
+            name: ''
+          }));
+        }
+      }
+    }, MyLib.jsx("label", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.label),
+      key: "form-label",
+      for: "form-input"
+    }, "My To Do App"), MyLib.jsx("input", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.input),
+      key: "form-input",
+      id: "form-input",
+      value: this.state.name,
+      oninput: e => this.setState(s => Object.assign(s, {
+        name: e.target.value
+      }))
+    }));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/demo/ToDoItem.tsx":
+/*!******************************************!*\
+  !*** ./src/components/demo/ToDoItem.tsx ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ToDoItem)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+
+const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class ToDoItem extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    console.log('Rendered ToDoItem', this.props.name);
+    const styles = {
+      list: {
+        whiteSpace: 'nowrap',
+        display: 'flex',
+        alignItems: 'center'
+      },
+      text: {
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        textDecoration: this.props.done ? 'line-through' : undefined,
+        color: this.props.done ? 'gray' : 'inherit'
+      }
+    };
+    return MyLib.jsx("li", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.list),
+      key: "to-do-item"
+    }, MyLib.jsx("button", {
+      style: "margin-right: 1rem;",
+      key: "toggle-btn",
+      onclick: () => this.props.toggleItem()
+    }, this.props.done ? '✅' : '⬜'), MyLib.jsx("span", {
+      key: "text-span"
+    }, this.props.name), MyLib.jsx("button", {
+      style: "margin-left: auto;",
+      key: "remove-btn",
+      onclick: e => this.props.removeItem()
+    }, "\u2716"));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/demo/ToDoListApp.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/demo/ToDoListApp.tsx ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ToDoListApp)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _NewItemForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewItemForm */ "./src/components/demo/NewItemForm.tsx");
+/* harmony import */ var _ToDoItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ToDoItem */ "./src/components/demo/ToDoItem.tsx");
+
+
+
+const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  state = {
+    items: []
+  };
+  toggleItem(index) {
+    this.setState(s => ({
+      items: s.items.map((item, i) => {
+        if (index == i) return {
+          ...item,
+          done: !item.done
+        };
+        return item;
+      })
+    }));
+  }
+  removeItem(index) {
+    this.setState(s => {
+      const newItems = Array.from(s.items);
+      newItems.splice(index, 1);
+      return {
+        items: newItems
+      };
+    });
+  }
+  render() {
+    console.log('rendered ToDoListApp', this.state);
+    const styles = {
+      root: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        fontSize: '1.4rem'
+      },
+      toDoList: {
+        listStyleType: 'none',
+        padding: '0',
+        width: '30rem'
+      }
+    };
+    const jsx = MyLib.jsx("div", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.root),
+      key: "root"
+    }, MyLib.jsx(_NewItemForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      addItem: n => {
+        this.setState(s => ({
+          items: s.items.concat([{
+            name: n,
+            done: false
+          }])
+        }));
+      },
+      key: "form"
+    }), MyLib.jsx("ul", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.toDoList),
+      key: "items"
+    }, this.state.items.map((item, i) => MyLib.jsx(_ToDoItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: i,
+      name: item.name,
+      done: item.done,
+      toggleItem: () => this.toggleItem(i),
+      removeItem: () => this.removeItem(i)
+    }))));
+    console.log('JSX of ToDoListApp', jsx);
+    return jsx;
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/slides/DemoSlide.tsx":
+/*!*********************************************!*\
+  !*** ./src/components/slides/DemoSlide.tsx ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DemoSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/demo/ToDoListApp */ "./src/components/demo/ToDoListApp.tsx");
+
+
+const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class DemoSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return MyLib.jsx("section", null, MyLib.jsx("h2", null, "L'heure de la d\xE9mo"), MyLib.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null));
   }
 }
 
@@ -254,11 +484,11 @@ const e={id:"zoom",init:function(e){e.getRevealElement().addEventListener("mouse
 /***/ ((module) => {
 
 (function webpackUniversalModuleDefinition(root, factory) {
-  if (true)
-    module.exports = factory();
-  else {}
+	if(true)
+		module.exports = factory();
+	else {}
 })(self, () => {
-  return /******/ (() => { // webpackBootstrap
+return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -266,525 +496,498 @@ const e={id:"zoom",init:function(e){e.getRevealElement().addEventListener("mouse
 /*!******************************!*\
   !*** ./src/lib/component.ts ***!
   \******************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_688__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_671__) => {
 
-          __nested_webpack_require_688__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_688__.d(__nested_webpack_exports__, {
+__nested_webpack_require_671__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_671__.d(__nested_webpack_exports__, {
 /* harmony export */   "Component": () => (/* binding */ Component),
 /* harmony export */   "createComponent": () => (/* binding */ createComponent)
-            /* harmony export */
-});
-/* harmony import */ var _diff__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_688__(/*! ./diff */ "./src/lib/diff.ts");
-/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_688__(/*! ./render */ "./src/lib/render.ts");
+/* harmony export */ });
+/* harmony import */ var _diff__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_671__(/*! ./diff */ "./src/lib/diff.ts");
+/* harmony import */ var _render__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_671__(/*! ./render */ "./src/lib/render.ts");
 
 
-          class Component {
-            setState(updater) {
-              if (!this.mountedElement) {
-                throw new Error("Updating an unmounted component");
-              }
-              const newState = updater(this.state);
-              if (newState !== this.state) {
-                this.state = newState;
-                const diff = this.getUpdateDiff();
-                (0, _render__WEBPACK_IMPORTED_MODULE_1__.applyDiff)(this.mountedElement, diff);
-              }
-            }
-            setProps(props) {
-              if (!this.mountedElement) {
-                throw new Error("Setting the props of an unmounted component");
-              }
-              const newState = this.componentWillRecieveProps(props, this.state);
-              if (newState !== this.state || props !== this.props) {
-                this.state = newState;
-                this.props = props;
-                return this.getUpdateDiff();
-              }
-              return (0, _diff__WEBPACK_IMPORTED_MODULE_0__.skip)();
-            }
-            initProps(props) {
-              this.props = props;
-              this.currentRootNode = this.render();
-              return this.currentRootNode;
-            }
-            getUpdateDiff() {
-              const newRootNode = this.render();
-              const diff = (0, _diff__WEBPACK_IMPORTED_MODULE_0__.createDiff)(this.currentRootNode, newRootNode);
-              if (diff.kind == 'replace') {
-                diff.callback = elem => this.mountedElement = elem;
-              }
-              this.currentRootNode = newRootNode;
-              requestAnimationFrame(() => this.componentDidUpdate());
-              return diff;
-            }
-            notifyMounted(elem) {
-              this.mountedElement = elem;
-              requestAnimationFrame(() => this.componentDidMount());
-            }
-            unmount() {
-              this.componentWillUnmount();
-              this.mountedElement = null;
-            }
-            componentDidMount() { }
-            componentWillRecieveProps(props, state) {
-              return state;
-            }
-            componentDidUpdate() { }
-            componentWillUnmount() { }
-          }
-          function createComponent(component, props) {
-            const componentProps = {
-              ...props
-            };
-            delete componentProps.key;
-            return {
-              kind: 'component',
-              key: props.key,
-              component,
-              props: componentProps,
-              instance: null
-            };
-          }
+class Component {
+  setState(updater) {
+    if (!this.mountedElement) {
+      throw new Error("Updating an unmounted component");
+    }
+    const newState = updater(this.state);
+    if (newState !== this.state) {
+      this.state = newState;
+      const diff = this.getUpdateDiff();
+      (0,_render__WEBPACK_IMPORTED_MODULE_1__.applyDiff)(this.mountedElement, diff);
+    }
+  }
+  setProps(props) {
+    if (!this.mountedElement) {
+      throw new Error("Setting the props of an unmounted component");
+    }
+    const newState = this.componentWillRecieveProps(props, this.state);
+    if (newState !== this.state || props !== this.props) {
+      this.state = newState;
+      this.props = props;
+      return this.getUpdateDiff();
+    }
+    return (0,_diff__WEBPACK_IMPORTED_MODULE_0__.skip)();
+  }
+  initProps(props) {
+    this.props = props;
+    this.currentRootNode = this.render();
+    return this.currentRootNode;
+  }
+  getUpdateDiff() {
+    const newRootNode = this.render();
+    const diff = (0,_diff__WEBPACK_IMPORTED_MODULE_0__.createDiff)(this.currentRootNode, newRootNode);
+    if (diff.kind == 'replace') {
+      diff.callback = elem => this.mountedElement = elem;
+    }
+    this.currentRootNode = newRootNode;
+    requestAnimationFrame(() => this.componentDidUpdate());
+    return diff;
+  }
+  notifyMounted(elem) {
+    this.mountedElement = elem;
+    requestAnimationFrame(() => this.componentDidMount());
+  }
+  unmount() {
+    this.componentWillUnmount();
+    this.mountedElement = null;
+  }
+  componentDidMount() {}
+  componentWillRecieveProps(props, state) {
+    return state;
+  }
+  componentDidUpdate() {}
+  componentWillUnmount() {}
+}
+function createComponent(component, props) {
+  const componentProps = {
+    ...props
+  };
+  delete componentProps.key;
+  return {
+    kind: 'component',
+    key: props.key,
+    component,
+    props: componentProps,
+    instance: null
+  };
+}
 
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/lib/diff.ts":
 /*!*************************!*\
   !*** ./src/lib/diff.ts ***!
   \*************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_4026__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_3301__) => {
 
-          __nested_webpack_require_4026__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_4026__.d(__nested_webpack_exports__, {
+__nested_webpack_require_3301__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_3301__.d(__nested_webpack_exports__, {
 /* harmony export */   "createDiff": () => (/* binding */ createDiff),
 /* harmony export */   "skip": () => (/* binding */ skip)
-            /* harmony export */
+/* harmony export */ });
+/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_3301__(/*! ../utils/utils */ "./src/utils/utils.ts");
+
+const createDiff = (oldNode, newNode) => {
+  if (oldNode.kind == 'text' && newNode.kind == 'text' && oldNode.value == newNode.value) {
+    return skip();
+  }
+  if (oldNode.kind == 'text' || newNode.kind == 'text') {
+    return replace(newNode);
+  }
+  if (oldNode.kind == 'component' && newNode.kind == 'component' && oldNode.component == newNode.component && oldNode.instance) {
+    newNode.instance = oldNode.instance;
+    if (newNode.props == oldNode.props) {
+      return skip();
+    }
+    return newNode.instance.setProps(newNode.props);
+  }
+  if (newNode.kind == 'component') {
+    newNode.instance == new newNode.component();
+    return replace(newNode.instance.initProps(newNode.props), elem => newNode.instance?.notifyMounted(elem));
+  }
+  if (oldNode.kind == 'component') {
+    oldNode.instance?.unmount();
+    oldNode.instance = null;
+    return replace(newNode);
+  }
+  if (oldNode.tagname !== newNode.tagname) {
+    return replace(newNode);
+  }
+
+  // get the updated and replaced attributes
+  return update(oldNode, newNode);
+};
+const skip = () => ({
+  kind: 'skip'
 });
-/* harmony import */ var _utils_utils__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_4026__(/*! ../utils/utils */ "./src/utils/utils.ts");
+const replace = (newNode, callback) => ({
+  kind: 'replace',
+  newNode,
+  callback
+});
+const remove = () => ({
+  kind: 'remove'
+});
+const insert = newNode => ({
+  kind: 'insert',
+  node: newNode
+});
+const update = (oldNode, newNode) => {
+  const attributesToRemove = Object.keys(oldNode.props ?? {}).filter(att => !Object.keys(newNode.props ?? {}).includes(att));
+  let attributesToSet;
+  if (!newNode.props || Object.keys(newNode.props).length == 0) {
+    attributesToSet = {};
+  } else if (!oldNode.props || Object.keys(oldNode.props).length == 0) {
+    attributesToSet = newNode.props;
+  } else {
+    attributesToSet = Object.keys(newNode.props).filter(att => oldNode.props[att] != newNode.props[att]).reduce((upd, att) => Object.assign(upd, {
+      [att]: newNode.props[att]
+    }), {});
+  }
+  const attUpdater = {
+    remove: attributesToRemove,
+    set: attributesToSet
+  };
+  const childrenUpdater = newChildrenDiff(oldNode.children ?? [], newNode.children ?? []);
+  return {
+    kind: 'update',
+    attributes: attUpdater,
+    children: childrenUpdater
+  };
+};
+const newChildrenDiff = (oldChildren, newChildren) => {
+  const operations = [];
+  const removeUntilkey = (elems, key) => {
+    while (!(0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(elems) && elems[0].key != key) {
+      if (elems[0].kind == 'component') {
+        elems[0].instance?.unmount();
+        elems[0].instance == null;
+      }
+      operations.push(remove());
+      elems.shift();
+    }
+  };
+  const insertUntilKey = (elems, key) => {
+    while (!(0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(elems) && elems[0].key != key) {
+      operations.push(insert(elems.shift()));
+    }
+  };
+  const remainingOldChildren = [...oldChildren];
+  const remainingNewChildren = [...newChildren];
 
-          const createDiff = (oldNode, newNode) => {
-            if (oldNode.kind == 'text' && newNode.kind == 'text' && oldNode.value == newNode.value) {
-              return skip();
-            }
-            if (oldNode.kind == 'text' || newNode.kind == 'text') {
-              return replace(newNode);
-            }
-            if (oldNode.kind == 'component' && newNode.kind == 'component' && oldNode.component == newNode.component && oldNode.instance) {
-              newNode.instance = oldNode.instance;
-              if (newNode.props == oldNode.props) {
-                return skip();
-              }
-              return newNode.instance.setProps(newNode.props);
-            }
-            if (newNode.kind == 'component') {
-              newNode.instance == new newNode.component();
-              return replace(newNode.instance.initProps(newNode.props), elem => newNode.instance?.notifyMounted(elem));
-            }
-            if (oldNode.kind == 'component') {
-              oldNode.instance?.unmount();
-              oldNode.instance = null;
-              return replace(newNode);
-            }
-            if (oldNode.tagname !== newNode.tagname) {
-              return replace(newNode);
-            }
+  // find the first element that got updated
+  let nextUpdateKey = remainingOldChildren.find(k => remainingNewChildren.find(l => l.key === k.key) !== undefined)?.key ?? null;
+  while (nextUpdateKey !== null) {
+    // first remove all old newChildren before the update
+    removeUntilkey(remainingOldChildren, nextUpdateKey);
 
-            // get the updated and replaced attributes
-            return update(oldNode, newNode);
-          };
-          const skip = () => ({
-            kind: 'skip'
-          });
-          const replace = (newNode, callback) => ({
-            kind: 'replace',
-            newNode,
-            callback
-          });
-          const remove = () => ({
-            kind: 'remove'
-          });
-          const insert = newNode => ({
-            kind: 'insert',
-            node: newNode
-          });
-          const update = (oldNode, newNode) => {
-            const attributesToRemove = Object.keys(oldNode.props ?? {}).filter(att => !Object.keys(newNode.props ?? {}).includes(att));
-            let attributesToSet;
-            if (!newNode.props || Object.keys(newNode.props).length == 0) {
-              attributesToSet = {};
-            } else if (!oldNode.props || Object.keys(oldNode.props).length == 0) {
-              attributesToSet = newNode.props;
-            } else {
-              attributesToSet = Object.keys(newNode.props).filter(att => oldNode.props[att] != newNode.props[att]).reduce((upd, att) => Object.assign(upd, {
-                [att]: newNode.props[att]
-              }), {});
-            }
-            const attUpdater = {
-              remove: attributesToRemove,
-              set: attributesToSet
-            };
-            const childrenUpdater = newChildrenDiff(oldNode.children ?? [], newNode.children ?? []);
-            return {
-              kind: 'update',
-              attributes: attUpdater,
-              children: childrenUpdater
-            };
-          };
-          const newChildrenDiff = (oldChildren, newChildren) => {
-            const operations = [];
-            const removeUntilkey = (elems, key) => {
-              while (!(0, _utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(elems) && elems[0].key != key) {
-                if (elems[0].kind == 'component') {
-                  elems[0].instance?.unmount();
-                  elems[0].instance == null;
-                }
-                operations.push(remove());
-                elems.shift();
-              }
-            };
-            const insertUntilKey = (elems, key) => {
-              while (!(0, _utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(elems) && elems[0].key != key) {
-                operations.push(insert(elems.shift()));
-              }
-            };
-            const remainingOldChildren = [...oldChildren];
-            const remainingNewChildren = [...newChildren];
+    // then insert all new newChildren before the update
+    insertUntilKey(remainingNewChildren, nextUpdateKey);
 
-            // find the first element that got updated
-            let nextUpdateKey = remainingOldChildren.find(k => remainingNewChildren.find(l => l.key === k.key) !== undefined)?.key ?? null;
-            while (nextUpdateKey !== null) {
-              // first remove all old newChildren before the update
-              removeUntilkey(remainingOldChildren, nextUpdateKey);
+    // create the update
+    if (!(0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(remainingNewChildren) && !(0,_utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(remainingOldChildren)) {
+      operations.push(createDiff(remainingOldChildren.shift(), remainingNewChildren.shift()));
+    }
 
-              // then insert all new newChildren before the update
-              insertUntilKey(remainingNewChildren, nextUpdateKey);
+    // find the next update
+    nextUpdateKey = remainingOldChildren.find(k => remainingNewChildren.find(l => l.key === k.key) !== undefined)?.key ?? null;
+  }
 
-              // create the update
-              if (!(0, _utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(remainingNewChildren) && !(0, _utils_utils__WEBPACK_IMPORTED_MODULE_0__.isEmpty)(remainingOldChildren)) {
-                operations.push(createDiff(remainingOldChildren.shift(), remainingNewChildren.shift()));
-              }
+  // remove all remaing old newChildren after the last update
+  removeUntilkey(remainingOldChildren, undefined);
 
-              // find the next update
-              nextUpdateKey = remainingOldChildren.find(k => remainingNewChildren.find(l => l.key === k.key) !== undefined)?.key ?? null;
-            }
+  // insert all remaing new newChildren after the last update
+  insertUntilKey(remainingNewChildren, undefined);
+  return operations;
+};
 
-            // remove all remaing old newChildren after the last update
-            removeUntilkey(remainingOldChildren, undefined);
-
-            // insert all remaing new newChildren after the last update
-            insertUntilKey(remainingNewChildren, undefined);
-            return operations;
-          };
-
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/lib/jsx-runtime.ts":
 /*!********************************!*\
   !*** ./src/lib/jsx-runtime.ts ***!
   \********************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_9770__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_7949__) => {
 
-          __nested_webpack_require_9770__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_9770__.d(__nested_webpack_exports__, {
+__nested_webpack_require_7949__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_7949__.d(__nested_webpack_exports__, {
 /* harmony export */   "jsx": () => (/* binding */ jsx),
 /* harmony export */   "jsxLib": () => (/* binding */ jsxLib),
 /* harmony export */   "jsxs": () => (/* binding */ jsxs)
-            /* harmony export */
-});
-/* harmony import */ var lib_vdom__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_9770__(/*! lib/vdom */ "./src/lib/vdom.ts");
-/* harmony import */ var lib_component__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_9770__(/*! lib/component */ "./src/lib/component.ts");
+/* harmony export */ });
+/* harmony import */ var lib_vdom__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_7949__(/*! lib/vdom */ "./src/lib/vdom.ts");
+/* harmony import */ var lib_component__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_7949__(/*! lib/component */ "./src/lib/component.ts");
 
 
-          function jsxs(tagOrComponent, props, key) {
-            Object.assign(props, {
-              key
-            });
-            if (typeof tagOrComponent !== 'string') {
-              return (0, lib_component__WEBPACK_IMPORTED_MODULE_1__.createComponent)(tagOrComponent, props);
-            }
-            const children = props.children ?? [];
-            delete props.children;
-            return (0, lib_vdom__WEBPACK_IMPORTED_MODULE_0__.createElement)(tagOrComponent, props, ...(Array.isArray(children) ? children : [children]));
-          }
-          const jsx = jsxs;
-          function jsxLib(tagOrComponent, props, ...children) {
-            props = props ?? {};
-            if (typeof tagOrComponent !== 'string') {
-              return (0, lib_component__WEBPACK_IMPORTED_MODULE_1__.createComponent)(tagOrComponent, props);
-            }
-            delete props.children;
-            return (0, lib_vdom__WEBPACK_IMPORTED_MODULE_0__.createElement)(tagOrComponent, props, ...(Array.isArray(children) ? children : [children]));
-          }
+function jsxs(tagOrComponent, props, key) {
+  Object.assign(props, {
+    key
+  });
+  if (typeof tagOrComponent !== 'string') {
+    return (0,lib_component__WEBPACK_IMPORTED_MODULE_1__.createComponent)(tagOrComponent, props);
+  }
+  const children = props.children ?? [];
+  delete props.children;
+  return (0,lib_vdom__WEBPACK_IMPORTED_MODULE_0__.createElement)(tagOrComponent, props, ...(Array.isArray(children) ? children : [children]));
+}
+const jsx = jsxs;
+function jsxLib(tagOrComponent, props, ...children) {
+  props = props ?? {};
+  if (typeof tagOrComponent !== 'string') {
+    return (0,lib_component__WEBPACK_IMPORTED_MODULE_1__.createComponent)(tagOrComponent, props);
+  }
+  delete props.children;
+  const resolvedChildren = Array.isArray(children) ? children.length === 1 && Array.isArray(children[0]) ? children[0] : children : [children];
+  return (0,lib_vdom__WEBPACK_IMPORTED_MODULE_0__.createElement)(tagOrComponent, props, ...resolvedChildren);
+}
 
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/lib/render.ts":
 /*!***************************!*\
   !*** ./src/lib/render.ts ***!
   \***************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_11653__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_9707__) => {
 
-          __nested_webpack_require_11653__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_11653__.d(__nested_webpack_exports__, {
+__nested_webpack_require_9707__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_9707__.d(__nested_webpack_exports__, {
 /* harmony export */   "applyDiff": () => (/* binding */ applyDiff),
 /* harmony export */   "renderDOM": () => (/* binding */ renderDOM)
-            /* harmony export */
-});
-          const renderDOM = (rootNodeId, rootNode) => {
-            const root = document.getElementById(rootNodeId);
-            if (!root) {
-              throw new Error("Could not find root element to attach to the app.");
-            }
-            root.replaceWith(renderElement(rootNode));
-          };
-          const renderElement = rootNode => {
-            if (rootNode.kind == 'text') {
-              return document.createTextNode(rootNode.value);
-            }
-            if (rootNode.kind === 'component') {
-              let nodeToRender;
-              if (rootNode.instance) {
-                nodeToRender = rootNode.instance.render();
-              } else {
-                rootNode.instance = new rootNode.component();
-                nodeToRender = rootNode.instance.initProps(rootNode.props);
-              }
-              const elem = renderElement(nodeToRender);
-              rootNode.instance.notifyMounted(elem);
-              return elem;
-            }
-            const elem = document.createElement(rootNode.tagname);
-            for (const att in rootNode.props ?? {}) {
-              elem[att] = rootNode.props ? rootNode.props[att] : undefined;
-            }
-            (rootNode.children ?? []).forEach(child => elem.appendChild(renderElement(child)));
-            return elem;
-          };
-          const applyDiff = (elem, diff) => {
-            if (diff.kind == 'skip') return elem;
-            if (diff.kind == 'replace') {
-              const newElem = renderElement(diff.newNode);
-              elem.replaceWith(newElem);
-              if (diff.callback) diff.callback(newElem);
-              return newElem;
-            }
-            if ('wholeText' in elem) {
-              throw new Error('invalid update for Text node');
-            }
-            for (const att in diff.attributes.remove) {
-              elem.removeAttribute(att);
-            }
-            for (const att in diff.attributes.set) {
-              elem[att] = diff.attributes.set[att];
-            }
-            applyChildrenDiff(elem, diff.children);
-            return elem;
-          };
-          const applyChildrenDiff = (elem, operations) => {
-            let offset = 0;
-            for (let i = 0; i < operations.length; i++) {
-              const childUpdater = operations[i];
-              if (childUpdater.kind == 'skip') continue;
-              if (childUpdater.kind == 'insert') {
-                const newChild = renderElement(childUpdater.node);
-                if (elem.childNodes[i + offset - 1]) {
-                  elem.childNodes[i + offset - 1].after(newChild);
-                } else {
-                  elem.appendChild(newChild);
-                }
-                continue;
-              }
-              const childElem = elem.childNodes[i + offset];
-              if (childUpdater.kind == 'remove') {
-                childElem.remove();
-                offset -= 1;
-                continue;
-              }
-              applyDiff(childElem, childUpdater);
-            }
-          };
+/* harmony export */ });
+const renderDOM = (rootNodeId, rootNode) => {
+  const root = document.getElementById(rootNodeId);
+  if (!root) {
+    throw new Error("Could not find root element to attach to the app.");
+  }
+  root.replaceWith(renderElement(rootNode));
+};
+const renderElement = rootNode => {
+  if (rootNode.kind == 'text') {
+    return document.createTextNode(rootNode.value);
+  }
+  if (rootNode.kind === 'component') {
+    let nodeToRender;
+    if (rootNode.instance) {
+      nodeToRender = rootNode.instance.render();
+    } else {
+      rootNode.instance = new rootNode.component();
+      nodeToRender = rootNode.instance.initProps(rootNode.props);
+    }
+    const elem = renderElement(nodeToRender);
+    rootNode.instance.notifyMounted(elem);
+    return elem;
+  }
+  const elem = document.createElement(rootNode.tagname);
+  for (const att in rootNode.props ?? {}) {
+    elem[att] = rootNode.props ? rootNode.props[att] : undefined;
+  }
+  (rootNode.children ?? []).forEach(child => elem.appendChild(renderElement(child)));
+  return elem;
+};
+const applyDiff = (elem, diff) => {
+  if (diff.kind == 'skip') return elem;
+  if (diff.kind == 'replace') {
+    const newElem = renderElement(diff.newNode);
+    elem.replaceWith(newElem);
+    if (diff.callback) diff.callback(newElem);
+    return newElem;
+  }
+  if ('wholeText' in elem) {
+    throw new Error('invalid update for Text node');
+  }
+  for (const att in diff.attributes.remove) {
+    elem.removeAttribute(att);
+  }
+  for (const att in diff.attributes.set) {
+    elem[att] = diff.attributes.set[att];
+  }
+  applyChildrenDiff(elem, diff.children);
+  return elem;
+};
+const applyChildrenDiff = (elem, operations) => {
+  let offset = 0;
+  for (let i = 0; i < operations.length; i++) {
+    const childUpdater = operations[i];
+    if (childUpdater.kind == 'skip') continue;
+    if (childUpdater.kind == 'insert') {
+      const newChild = renderElement(childUpdater.node);
+      if (elem.childNodes[i + offset - 1]) {
+        elem.childNodes[i + offset - 1].after(newChild);
+      } else {
+        elem.appendChild(newChild);
+      }
+      continue;
+    }
+    const childElem = elem.childNodes[i + offset];
+    if (childUpdater.kind == 'remove') {
+      childElem.remove();
+      offset -= 1;
+      continue;
+    }
+    applyDiff(childElem, childUpdater);
+  }
+};
 
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/lib/vdom.ts":
 /*!*************************!*\
   !*** ./src/lib/vdom.ts ***!
   \*************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_15189__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_12481__) => {
 
-          __nested_webpack_require_15189__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_15189__.d(__nested_webpack_exports__, {
+__nested_webpack_require_12481__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_12481__.d(__nested_webpack_exports__, {
 /* harmony export */   "createElement": () => (/* binding */ createElement),
 /* harmony export */   "createText": () => (/* binding */ createText)
-            /* harmony export */
+/* harmony export */ });
+const createElement = (tagname, props, ...children) => {
+  const key = props.key;
+  const propsToPass = props;
+  delete propsToPass.key;
+  const processedChildren = children.map(ch => {
+    if (typeof ch !== 'string') return ch;
+    return createText(ch);
+  });
+  return {
+    kind: 'element',
+    tagname,
+    props: propsToPass,
+    children: processedChildren,
+    key
+  };
+};
+const createText = (value, key = '') => ({
+  key,
+  kind: 'text',
+  value: value.toString()
 });
-          const createElement = (tagname, props, ...children) => {
-            const key = props.key;
-            const propsToPass = props;
-            delete propsToPass.key;
-            const processedChildren = children.map(ch => {
-              if (typeof ch !== 'string') return ch;
-              return createText(ch);
-            });
-            return {
-              kind: 'element',
-              tagname,
-              props: propsToPass,
-              children: processedChildren,
-              key
-            };
-          };
-          const createText = (value, key = '') => ({
-            key,
-            kind: 'text',
-            value: value.toString()
-          });
 
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/utils/style.ts":
 /*!****************************!*\
   !*** ./src/utils/style.ts ***!
   \****************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_16413__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_13463__) => {
 
-          __nested_webpack_require_16413__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_16413__.d(__nested_webpack_exports__, {
+__nested_webpack_require_13463__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_13463__.d(__nested_webpack_exports__, {
 /* harmony export */   "makeStyle": () => (/* binding */ makeStyle)
-            /* harmony export */
-});
-          const kebabize = str => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase());
-          const makeStyle = style => {
-            return Object.entries(style).map(([k, v]) => {
-              if (v) {
-                return `${kebabize(k)}:${v};`;
-              }
-              return '';
-            }).join(' ');
-          };
+/* harmony export */ });
+const kebabize = str => str.replace(/[A-Z]+(?![a-z])|[A-Z]/g, ($, ofs) => (ofs ? "-" : "") + $.toLowerCase());
+const makeStyle = style => {
+  return Object.entries(style).map(([k, v]) => {
+    if (v) {
+      return `${kebabize(k)}:${v};`;
+    }
+    return '';
+  }).join(' ');
+};
 
-          /***/
-}),
+/***/ }),
 
 /***/ "./src/utils/utils.ts":
 /*!****************************!*\
   !*** ./src/utils/utils.ts ***!
   \****************************/
-/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_17241__) => {
+/***/ ((__unused_webpack_module, __nested_webpack_exports__, __nested_webpack_require_14169__) => {
 
-          __nested_webpack_require_17241__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_17241__.d(__nested_webpack_exports__, {
+__nested_webpack_require_14169__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_14169__.d(__nested_webpack_exports__, {
 /* harmony export */   "isEmpty": () => (/* binding */ isEmpty)
-            /* harmony export */
-});
-          function isEmpty(array) {
-            return array.length === 0;
-          }
+/* harmony export */ });
+function isEmpty(array) {
+  return array.length === 0;
+}
 
-          /***/
-})
+/***/ })
 
-      /******/
-});
+/******/ 	});
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
-/******/ 	function __nested_webpack_require_17819__(moduleId) {
+/******/ 	function __nested_webpack_require_14682__(moduleId) {
 /******/ 		// Check if module is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
-        /******/
-}
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
 /******/ 			// no module.id needed
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
-        /******/
-};
-/******/
+/******/ 		};
+/******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_17819__);
-/******/
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __nested_webpack_require_14682__);
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
-      /******/
-}
-/******/
+/******/ 	}
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__nested_webpack_require_17819__.d = (exports, definition) => {
-/******/ 			for (var key in definition) {
-/******/ 				if (__nested_webpack_require_17819__.o(definition, key) && !__nested_webpack_require_17819__.o(exports, key)) {
+/******/ 		__nested_webpack_require_14682__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__nested_webpack_require_14682__.o(definition, key) && !__nested_webpack_require_14682__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
-            /******/
-}
-          /******/
-}
-        /******/
-};
-      /******/
-})();
-/******/
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
-/******/ 		__nested_webpack_require_17819__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-      /******/
-})();
-/******/
+/******/ 		__nested_webpack_require_14682__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__nested_webpack_require_17819__.r = (exports) => {
-/******/ 			if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 		__nested_webpack_require_14682__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-          /******/
-}
+/******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-        /******/
-};
-      /******/
-})();
-    /******/
-    /************************************************************************/
-    var __nested_webpack_exports__ = {};
-    // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
-    (() => {
-      /*!**********************!*\
-        !*** ./src/index.ts ***!
-        \**********************/
-      __nested_webpack_require_17819__.r(__nested_webpack_exports__);
-/* harmony export */ __nested_webpack_require_17819__.d(__nested_webpack_exports__, {
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/************************************************************************/
+var __nested_webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+/*!**********************!*\
+  !*** ./src/index.ts ***!
+  \**********************/
+__nested_webpack_require_14682__.r(__nested_webpack_exports__);
+/* harmony export */ __nested_webpack_require_14682__.d(__nested_webpack_exports__, {
 /* harmony export */   "Component": () => (/* reexport safe */ _lib_component__WEBPACK_IMPORTED_MODULE_1__.Component),
 /* harmony export */   "jsx": () => (/* reexport safe */ _lib_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxLib),
 /* harmony export */   "makeStyle": () => (/* reexport safe */ _utils_style__WEBPACK_IMPORTED_MODULE_2__.makeStyle),
 /* harmony export */   "renderDOM": () => (/* reexport safe */ _lib_render__WEBPACK_IMPORTED_MODULE_0__.renderDOM)
-        /* harmony export */
-});
-/* harmony import */ var _lib_render__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_17819__(/*! ./lib/render */ "./src/lib/render.ts");
-/* harmony import */ var _lib_component__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_17819__(/*! ./lib/component */ "./src/lib/component.ts");
-/* harmony import */ var _utils_style__WEBPACK_IMPORTED_MODULE_2__ = __nested_webpack_require_17819__(/*! ./utils/style */ "./src/utils/style.ts");
-/* harmony import */ var _lib_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __nested_webpack_require_17819__(/*! ./lib/jsx-runtime */ "./src/lib/jsx-runtime.ts");
+/* harmony export */ });
+/* harmony import */ var _lib_render__WEBPACK_IMPORTED_MODULE_0__ = __nested_webpack_require_14682__(/*! ./lib/render */ "./src/lib/render.ts");
+/* harmony import */ var _lib_component__WEBPACK_IMPORTED_MODULE_1__ = __nested_webpack_require_14682__(/*! ./lib/component */ "./src/lib/component.ts");
+/* harmony import */ var _utils_style__WEBPACK_IMPORTED_MODULE_2__ = __nested_webpack_require_14682__(/*! ./utils/style */ "./src/utils/style.ts");
+/* harmony import */ var _lib_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __nested_webpack_require_14682__(/*! ./lib/jsx-runtime */ "./src/lib/jsx-runtime.ts");
 
 
 
 
-    })();
+})();
 
 /******/ 	return __nested_webpack_exports__;
-    /******/
-})()
-    ;
+/******/ })()
+;
 });
 
 
