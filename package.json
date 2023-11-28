@@ -21,6 +21,8 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "@selimbat/vdom-deep-dive": "1.0.0"
+    "@selimbat/vdom-deep-dive": "1.0.0",
+    "@types/reveal.js": "^4.4.8",
+    "reveal.js": "^5.0.2"
   }
 }

@@ -1,6 +1,8 @@
+import App from "components/App";
+import { initReveal } from "initReveal";
+
 const MyLib = require('@selimbat/vdom-deep-dive');
 
-console.log(MyLib)
+MyLib.renderDOM('root', <App />);
 
-MyLib.renderDOM('root', <div key="root"><div>A</div><div>Hello World!</div></div>);
-
+initReveal();
