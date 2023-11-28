@@ -23,6 +23,7 @@ export default class ToDoItem extends Component<ToDoItemProps, {}> {
                 color: this.props.done ? 'gray' : 'inherit',
             }
         }
+
         return (
             <li style={makeStyle(styles.list)} key='to-do-item'>
                 <button
@@ -32,7 +33,12 @@ export default class ToDoItem extends Component<ToDoItemProps, {}> {
                 >
                     {this.props.done ? '✅' : '⬜'}
                 </button>
-                <span key="text-span">{this.props.name}</span>
+                <span
+                    style={makeStyle(styles.text)}
+                    key="text-span"
+                >
+                    {this.props.name}
+                </span>
                 <button
                     style='margin-left: auto;'
                     key='remove-btn'

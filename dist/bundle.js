@@ -116,7 +116,6 @@ __webpack_require__.r(__webpack_exports__);
 const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class ToDoItem extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    console.log('Rendered ToDoItem', this.props.name);
     const styles = {
       list: {
         whiteSpace: 'nowrap',
@@ -138,6 +137,7 @@ class ToDoItem extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Com
       key: "toggle-btn",
       onclick: () => this.props.toggleItem()
     }, this.props.done ? '✅' : '⬜'), MyLib.jsx("span", {
+      style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.text),
       key: "text-span"
     }, this.props.name), MyLib.jsx("button", {
       style: "margin-left: auto;",
@@ -193,7 +193,6 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
     });
   }
   render() {
-    console.log('rendered ToDoListApp', this.state);
     const styles = {
       root: {
         display: 'flex',
@@ -207,7 +206,7 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
         width: '30rem'
       }
     };
-    const jsx = MyLib.jsx("div", {
+    return MyLib.jsx("div", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.root),
       key: "root"
     }, MyLib.jsx(_NewItemForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -230,8 +229,6 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
       toggleItem: () => this.toggleItem(i),
       removeItem: () => this.removeItem(i)
     }))));
-    console.log('JSX of ToDoListApp', jsx);
-    return jsx;
   }
 }
 
@@ -256,7 +253,10 @@ __webpack_require__.r(__webpack_exports__);
 const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class DemoSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("h2", null, "L'heure de la d\xE9mo"), MyLib.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "L'heure de la d\xE9mo"), MyLib.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null)), MyLib.jsx("section", null, MyLib.jsx("img", {
+      src: "./public/pimp_my_react.jpg",
+      alt: "Xzibit from Pimp My Ride meme saying 'Yo dawg I heard you like React so we put React in your React so you can React while you React'"
+    })));
   }
 }
 
