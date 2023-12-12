@@ -5,6 +5,7 @@ import DiffTypesSlide from "./slides/DiffTypesSlide";
 import IntroSlide from "./slides/IntroSlide";
 import JSXSlide from "./slides/JSXSlide";
 import PurposeOfReactSlide from "./slides/PurposeOfReactSlide";
+import RealDOMSlide from "./slides/RealDOMSlide";
 import VDOMTypesSlide from "./slides/VDOMTypesSlide";
 const Buzz = require('@selimbat/vdom-deep-dive');
 
@@ -19,6 +20,7 @@ export default class App extends Component {
                     <JSXSlide />
                     <DiffExplanationSlide />
                     <DiffTypesSlide />
+                    <RealDOMSlide />
                     <DemoSlide />
                 </div>
             </div>

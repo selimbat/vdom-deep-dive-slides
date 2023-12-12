@@ -20,7 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
 /* harmony import */ var _slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/JSXSlide */ "./src/components/slides/JSXSlide.tsx");
 /* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
-/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+/* harmony import */ var _slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/RealDOMSlide */ "./src/components/slides/RealDOMSlide.tsx");
+/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+
 
 
 
@@ -36,7 +38,7 @@ class App extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Componen
       className: "reveal"
     }, Buzz.jsx("div", {
       className: "slides"
-    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_8__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
   }
 }
 
@@ -745,6 +747,129 @@ class PurposeOfReactSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MOD
     }, "Ne g\xE9rer qu'un seul langage au lieu de HTML/CSS/JS."), Buzz.jsx("li", {
       className: "fragment fade-left"
     }, "La mise en commun et variabilisation de", Buzz.jsx("br", null), "bouts d'UI devient possible.")));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/slides/RealDOMSlide.tsx":
+/*!************************************************!*\
+  !*** ./src/components/slides/RealDOMSlide.tsx ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RealDOMSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
+
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const SIGNATURE_APPLY_DIFF_CODE = `
+// Applies the given transformations to a DOM element and returns it.
+export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element | Text => {
+}
+`;
+const SIGNATURE_RENDER_ELEMENT_CODE = `
+// Creates a DOM node from a VDOM node.
+const renderElement = (rootNode: VDOMNode): Element | Text => {
+}
+
+// Applies the given transformations to a DOM element and returns it.
+export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element | Text => {
+}
+`;
+const IMPLEM_RENDER_ELEMENT_CODE = `
+// Creates a DOM node from a VDOM node.
+const renderElement = (rootNode: VDOMNode): Element | Text => {
+    if (rootNode.kind == 'text') {
+        return document.createTextNode(rootNode.value);
+    }
+
+    const elem = document.createElement(rootNode.tagname)
+
+    for (const att in (rootNode.props ?? {})) {
+        elem[att] = rootNode.props?.[att];
+    }
+
+    (rootNode.children ?? []).forEach(child =>
+        elem.appendChild(renderElement(child))
+    )
+
+    return elem;
+}
+
+// Applies the given transformations to a DOM element and returns it.
+export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element | Text => {
+}
+`;
+const IMPLEM_APPLY_DIFF_CODE = `
+// Creates a DOM node from a VDOM node.
+const renderElement = (rootNode: VDOMNode): Element | Text => {
+    if (rootNode.kind == 'text') {
+        return document.createTextNode(rootNode.value);
+    }
+
+    const elem = document.createElement(rootNode.tagname)
+
+    for (const att in (rootNode.props ?? {})) {
+        elem[att] = rootNode.props?.[att];
+    }
+
+    (rootNode.children ?? []).forEach(child =>
+        elem.appendChild(renderElement(child))
+    )
+
+    return elem;
+}
+
+// Applies the given transformations to a DOM element and returns it.
+export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element | Text => {
+    if (diff.kind == 'skip') return elem;
+
+    if (diff.kind == 'replace') {
+        const newElem = renderElement(diff.newNode);
+        elem.replaceWith(newElem);
+        return newElem;
+    }
+
+    for (const att in diff.attributes.remove) {
+        elem.removeAttribute(att);
+    }
+
+    for (const att in diff.attributes.set) {
+        elem[att] = diff.attributes.set[att];
+    }
+
+    applyChildrenDiff(elem, diff.children); // out of scope
+
+    return elem;
+}
+`;
+class RealDOMSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Dealing with the real DOM")), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "Now that we have the operations from the diffing algorithm, we need to apply them to the DOM.", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SIGNATURE_APPLY_DIFF_CODE
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SIGNATURE_RENDER_ELEMENT_CODE
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: IMPLEM_RENDER_ELEMENT_CODE
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: IMPLEM_APPLY_DIFF_CODE,
+      lineHighlights: "20-41"
+    })));
   }
 }
 
