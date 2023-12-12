@@ -9,7 +9,9 @@ export default class DemoSlide extends Component {
         return (
             <section>
                 <section>
-                    <h2>L'heure de la démo</h2>
+                    <h2>Demo time</h2>
+                </section>
+                <section>
                     <ToDoListApp />
                 </section>
                 <section>

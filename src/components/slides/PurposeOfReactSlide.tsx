@@ -9,13 +9,13 @@ export default class PurposeOfReactSlide extends Component {
                 <p>Qu'apporte React par rapport à juste vanilla ?</p>
                 <br />
                 <ul>
-                    <li className="fragment">
+                    <li className="fragment fade-left">
                         Abstraction du HTML.
                     </li>
-                    <li className="fragment">
+                    <li className="fragment fade-left">
                         Ne gérer qu'un seul langage au lieu de HTML/CSS/JS.
                     </li>
-                    <li className="fragment">
+                    <li className="fragment fade-left">
                         La mise en commun et variabilisation de<br />bouts d'UI devient possible.
                     </li>
                 </ul>
