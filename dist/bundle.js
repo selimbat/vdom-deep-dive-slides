@@ -29,14 +29,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class App extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("div", {
+    return Buzz.jsx("div", {
       className: "reveal"
-    }, MyLib.jsx("div", {
+    }, Buzz.jsx("div", {
       className: "slides"
-    }, MyLib.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), MyLib.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), MyLib.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), MyLib.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), MyLib.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), MyLib.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), MyLib.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
   }
 }
 
@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class NewItemForm extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   state = {
     name: ''
@@ -77,7 +77,7 @@ class NewItemForm extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
         fontSize: 'inherit'
       }
     };
-    return MyLib.jsx("form", {
+    return Buzz.jsx("form", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.form),
       key: "new-item-form",
       onsubmit: e => {
@@ -89,11 +89,11 @@ class NewItemForm extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
           }));
         }
       }
-    }, MyLib.jsx("label", {
+    }, Buzz.jsx("label", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.label),
       key: "form-label",
       for: "form-input"
-    }, "My To Do App"), MyLib.jsx("input", {
+    }, "My To Do App"), Buzz.jsx("input", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.input),
       key: "form-input",
       id: "form-input",
@@ -121,7 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class ToDoItem extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
     const styles = {
@@ -137,17 +137,17 @@ class ToDoItem extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Com
         color: this.props.done ? 'gray' : 'inherit'
       }
     };
-    return MyLib.jsx("li", {
+    return Buzz.jsx("li", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.list),
       key: "to-do-item"
-    }, MyLib.jsx("button", {
+    }, Buzz.jsx("button", {
       style: "margin-right: 1rem;",
       key: "toggle-btn",
       onclick: () => this.props.toggleItem()
-    }, this.props.done ? '✅' : '⬜'), MyLib.jsx("span", {
+    }, this.props.done ? '✅' : '⬜'), Buzz.jsx("span", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.text),
       key: "text-span"
-    }, this.props.name), MyLib.jsx("button", {
+    }, this.props.name), Buzz.jsx("button", {
       style: "margin-left: auto;",
       key: "remove-btn",
       onclick: e => this.props.removeItem()
@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   state = {
     items: []
@@ -214,10 +214,10 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
         width: '30rem'
       }
     };
-    return MyLib.jsx("div", {
+    return Buzz.jsx("div", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.root),
       key: "root"
-    }, MyLib.jsx(_NewItemForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, Buzz.jsx(_NewItemForm__WEBPACK_IMPORTED_MODULE_1__["default"], {
       addItem: n => {
         this.setState(s => ({
           items: s.items.concat([{
@@ -227,10 +227,10 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
         }));
       },
       key: "form"
-    }), MyLib.jsx("ul", {
+    }), Buzz.jsx("ul", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.toDoList),
       key: "items"
-    }, this.state.items.map((item, i) => MyLib.jsx(_ToDoItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, this.state.items.map((item, i) => Buzz.jsx(_ToDoItem__WEBPACK_IMPORTED_MODULE_2__["default"], {
       key: i,
       name: item.name,
       done: item.done,
@@ -258,11 +258,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/demo/ToDoListApp */ "./src/components/demo/ToDoListApp.tsx");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const memeAltText = "Xzibit from Pimp My Ride meme saying 'Yo dawg I heard you like React so we put React in your React so you can React while you React'";
 class DemoSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "Demo time")), MyLib.jsx("section", null, MyLib.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null)), MyLib.jsx("section", null, MyLib.jsx("img", {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Demo time")), Buzz.jsx("section", null, Buzz.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null)), Buzz.jsx("section", null, Buzz.jsx("img", {
       src: "./public/pimp_my_react.jpg",
       alt: memeAltText
     })));
@@ -287,7 +287,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const NODE_CODE = `
 export interface SkipOperation {
     kind: 'skip';
@@ -393,17 +393,17 @@ export const createDiff = (oldNode: VDOMNode, newNode: VDOMNode): VDOMNodeUpdate
 `;
 class DiffTypesSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "The diff data structure")), MyLib.jsx("section", null, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "The diff data structure")), Buzz.jsx("section", null, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: NODE_CODE,
       lang: "typescript"
-    })), MyLib.jsx("section", null, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    })), Buzz.jsx("section", null, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: CHILDREN_CODE,
       lang: "typescript"
-    })), MyLib.jsx("section", null, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    })), Buzz.jsx("section", null, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: FUNCTIONS_CODE,
       lang: "typescript",
       lineHighlights: "1-3|5-8|10-12|14-17|19-39"
-    })), MyLib.jsx("section", null, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    })), Buzz.jsx("section", null, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: CREATE_DIFF_CODE,
       lang: "typescript"
     })));
@@ -428,96 +428,96 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class DiffExplanationSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "The diffing algorithm")), MyLib.jsx("section", null, MyLib.jsx("div", {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "The diffing algorithm")), Buzz.jsx("section", null, Buzz.jsx("div", {
       className: "r-stack"
-    }, MyLib.jsx("img", {
+    }, Buzz.jsx("img", {
       className: "fragment fade-out",
       "data-fragment-index": "0",
       src: "./public/html-tree-example.svg",
       alt: "A tree representing the structure of the HTML as it is in the browser."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment",
       "data-fragment-index": "0",
       src: "./public/html-tree-example-after-change.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }))), MyLib.jsx("section", null, MyLib.jsx("div", null, "Let's introduce some operations:"), MyLib.jsx("ul", null, MyLib.jsx("li", {
+    }))), Buzz.jsx("section", null, Buzz.jsx("div", null, "Let's introduce some operations:"), Buzz.jsx("ul", null, Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Skip"), MyLib.jsx("li", {
+    }, "Skip"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Replace"), MyLib.jsx("li", {
+    }, "Replace"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Update ", MyLib.jsx("span", {
+    }, "Update ", Buzz.jsx("span", {
       className: "fragment"
-    }, "(attributes & children)")), MyLib.jsx("li", {
+    }, "(attributes & children)")), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Remove"), MyLib.jsx("li", {
+    }, "Remove"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Insert"))), MyLib.jsx("section", null, MyLib.jsx("div", {
+    }, "Insert"))), Buzz.jsx("section", null, Buzz.jsx("div", {
       className: "r-stack"
-    }, MyLib.jsx("img", {
+    }, Buzz.jsx("img", {
       className: "fragment fade-out",
       src: "./public/html-tree-example-step-0.svg",
       "data-fragment-index": "1",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "2",
       src: "./public/html-tree-example-step-1.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "3",
       src: "./public/html-tree-example-step-2.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "4",
       src: "./public/html-tree-example-step-3.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "5",
       src: "./public/html-tree-example-step-4.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "6",
       src: "./public/html-tree-example-step-5.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "7",
       src: "./public/html-tree-example-step-6.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    }), MyLib.jsx("img", {
+    }), Buzz.jsx("img", {
       className: "fragment fade-in-then-out",
       "data-fragment-index": "8",
       src: "./public/html-tree-example-step-7.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
-    })), MyLib.jsx("ul", {
+    })), Buzz.jsx("ul", {
       style: "font-size: 0.8em; padding-top:0.25em;"
-    }, MyLib.jsx("li", {
+    }, Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "0"
-    }, "Update children (div#root => div#root)"), MyLib.jsx("li", {
+    }, "Update children (div#root => div#root)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "2"
-    }, "Replace (text vs input)"), MyLib.jsx("li", {
+    }, "Replace (text vs input)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "3"
-    }, "Update attributes (input => input#my-field)"), MyLib.jsx("li", {
+    }, "Update attributes (input => input#my-field)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "4"
-    }, "Update children (button)"), MyLib.jsx("li", {
+    }, "Update children (button)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "5"
-    }, "Replace (text => new text)"), MyLib.jsx("li", {
+    }, "Replace (text => new text)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "6"
-    }, "Update children (svg)"), MyLib.jsx("li", {
+    }, "Update children (svg)"), Buzz.jsx("li", {
       className: "fragment fade-left",
       "data-fragment-index": "7"
     }, "Skip (path)"))));
@@ -540,12 +540,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class IntroSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("h2", null, "Building your own React from scratch"), MyLib.jsx("p", null, "By Selim Tirellil"), MyLib.jsx("br", null), MyLib.jsx("br", null), MyLib.jsx("br", null), MyLib.jsx("figure", {
+    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Building your own React from scratch"), Buzz.jsx("p", null, "By Selim Tirellil"), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("figure", {
       style: "font-size:large;"
-    }, MyLib.jsx("blockquote", null, MyLib.jsx("p", null, "Why bother with tools when you can do it with Javascript?")), MyLib.jsx("figcaption", null, "\u2014Karl Marx, ", MyLib.jsx("cite", null, MyLib.jsx("em", null, "Everything JS")))));
+    }, Buzz.jsx("blockquote", null, Buzz.jsx("p", null, "Why bother with tools when you can do it with Javascript?")), Buzz.jsx("figcaption", null, "\u2014Karl Marx, ", Buzz.jsx("cite", null, Buzz.jsx("em", null, "Everything JS")))));
   }
 }
 
@@ -567,7 +567,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const PRE_JSX_PROCESS_CODE = `
 export default class App extends Component {
     render() {
@@ -687,31 +687,31 @@ export const createElement = (
 `;
 class JSXSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "What is JSX?")), MyLib.jsx("section", null, "Let's take the same example", MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "What is JSX?")), Buzz.jsx("section", null, "Let's take the same example", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: PRE_JSX_PROCESS_CODE
-    })), MyLib.jsx("section", {
+    })), Buzz.jsx("section", {
       "data-auto-animate": true
-    }, "Babel parses and transforms it into this:", MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, "Babel parses and transforms it into this:", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: POST_JSX_PROCESS_CODE
-    })), MyLib.jsx("section", {
+    })), Buzz.jsx("section", {
       "data-auto-animate": true
-    }, "But we want this:", MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, "But we want this:", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: POST_JSX_PROCESS_CUSTOM_LIB_CODE
-    })), MyLib.jsx("section", {
+    })), Buzz.jsx("section", {
       "data-auto-animate": true
-    }, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: JSX_FUNCTIONS_CODE_1,
       lang: "typescript",
       lineHighlights: "1-9|4-9|1-2"
-    })), MyLib.jsx("section", {
+    })), Buzz.jsx("section", {
       "data-auto-animate": true
-    }, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: JSX_FUNCTIONS_CODE_2,
       lang: "typescript",
       lineHighlights: "1-5"
-    })), MyLib.jsx("section", {
+    })), Buzz.jsx("section", {
       "data-auto-animate": true
-    }, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: JSX_FUNCTIONS_CODE_3,
       lang: "typescript",
       lineHighlights: "7-28"
@@ -735,16 +735,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class PurposeOfReactSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("h2", null, "Pourquoi utilise-t-on React ?"), MyLib.jsx("p", null, "Qu'apporte React par rapport \xE0 juste vanilla ?"), MyLib.jsx("br", null), MyLib.jsx("ul", null, MyLib.jsx("li", {
+    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Pourquoi utilise-t-on React ?"), Buzz.jsx("p", null, "Qu'apporte React par rapport \xE0 juste vanilla ?"), Buzz.jsx("br", null), Buzz.jsx("ul", null, Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Abstraction du HTML."), MyLib.jsx("li", {
+    }, "Abstraction du HTML."), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Ne g\xE9rer qu'un seul langage au lieu de HTML/CSS/JS."), MyLib.jsx("li", {
+    }, "Ne g\xE9rer qu'un seul langage au lieu de HTML/CSS/JS."), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "La mise en commun et variabilisation de", MyLib.jsx("br", null), "bouts d'UI devient possible.")));
+    }, "La mise en commun et variabilisation de", Buzz.jsx("br", null), "bouts d'UI devient possible.")));
   }
 }
 
@@ -766,7 +766,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const EXAMPLE_HTML = `
 <div id="root">
     Enter your favorite number
@@ -800,12 +800,12 @@ export type VDOMNode = VDOMElement | VDOMText;
 `;
 class VDOMTypesSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return MyLib.jsx("section", null, MyLib.jsx("section", null, MyLib.jsx("h2", null, "In the beginning there were types")), MyLib.jsx("section", null, "Lets consider this HTML structure", MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "In the beginning there were types")), Buzz.jsx("section", null, "Lets consider this HTML structure", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: EXAMPLE_HTML
-    })), MyLib.jsx("section", null, MyLib.jsx("img", {
+    })), Buzz.jsx("section", null, Buzz.jsx("img", {
       src: "./public/html-tree-example.svg",
       alt: "A tree representing the structure of the HTML of the previous slide"
-    })), MyLib.jsx("section", null, MyLib.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    })), Buzz.jsx("section", null, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: CODE,
       lang: "typescript",
       lineHighlights: "1-19|13-17|5-11|1-3"
@@ -829,16 +829,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class CodeBlock extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
     let className = 'hljs';
     if (this.props.lang) {
       className += ` language-${this.props.lang}`;
     }
-    return MyLib.jsx("pre", {
+    return Buzz.jsx("pre", {
       "data-id": "code-animation"
-    }, MyLib.jsx("code", {
+    }, Buzz.jsx("code", {
       className: className,
       "data-trim": true,
       "data-line-numbers": this.props.lineHighlights ?? true
@@ -1636,8 +1636,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var initReveal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! initReveal */ "./src/initReveal.ts");
 
 
-const MyLib = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
-MyLib.renderDOM('root', MyLib.jsx(components_App__WEBPACK_IMPORTED_MODULE_0__["default"], null));
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+Buzz.renderDOM('root', Buzz.jsx(components_App__WEBPACK_IMPORTED_MODULE_0__["default"], null));
 (0,initReveal__WEBPACK_IMPORTED_MODULE_1__.initReveal)();
 })();
 

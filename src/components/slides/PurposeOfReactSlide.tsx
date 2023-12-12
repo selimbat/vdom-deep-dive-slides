@@ -1,5 +1,5 @@
 import { Component } from "@selimbat/vdom-deep-dive";
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 export default class PurposeOfReactSlide extends Component {
     render() {

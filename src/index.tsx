@@ -1,8 +1,8 @@
 import App from "components/App";
 import { initReveal } from "initReveal";
 
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
-MyLib.renderDOM('root', <App />);
+Buzz.renderDOM('root', <App />);
 
 initReveal();

@@ -1,5 +1,5 @@
 import { Component, makeStyle } from "@selimbat/vdom-deep-dive";
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 interface ToDoItemProps {
     name: string;

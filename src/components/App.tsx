@@ -6,7 +6,7 @@ import IntroSlide from "./slides/IntroSlide";
 import JSXSlide from "./slides/JSXSlide";
 import PurposeOfReactSlide from "./slides/PurposeOfReactSlide";
 import VDOMTypesSlide from "./slides/VDOMTypesSlide";
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 export default class App extends Component {
     render() {

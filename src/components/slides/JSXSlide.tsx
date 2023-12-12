@@ -1,6 +1,6 @@
 import { Component } from "@selimbat/vdom-deep-dive";
 import CodeBlock from "components/utils/CodeBlock";
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 const PRE_JSX_PROCESS_CODE = `
 export default class App extends Component {

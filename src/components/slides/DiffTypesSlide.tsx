@@ -1,6 +1,6 @@
 import { Component } from "@selimbat/vdom-deep-dive";
 import CodeBlock from "components/utils/CodeBlock";
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 const NODE_CODE = `
 export interface SkipOperation {

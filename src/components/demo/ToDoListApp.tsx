@@ -1,7 +1,7 @@
 import { Component, makeStyle } from "@selimbat/vdom-deep-dive"
 import NewItemForm from "./NewItemForm"
 import ToDoItem from "./ToDoItem"
-const MyLib = require('@selimbat/vdom-deep-dive');
+const Buzz = require('@selimbat/vdom-deep-dive');
 
 
 interface ToDoState {
