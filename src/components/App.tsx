@@ -1,4 +1,5 @@
 import { Component } from "@selimbat/vdom-deep-dive";
+import ComponentClassSlide from "./slides/ComponentClassSlide";
 import DemoSlide from "./slides/DemoSlide";
 import DiffExplanationSlide from "./slides/DiffingExplanationSlide";
 import DiffTypesSlide from "./slides/DiffTypesSlide";
@@ -21,6 +22,7 @@ export default class App extends Component {
                     <DiffExplanationSlide />
                     <DiffTypesSlide />
                     <RealDOMSlide />
+                    <ComponentClassSlide />
                     <DemoSlide />
                 </div>
             </div>

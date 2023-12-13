@@ -14,14 +14,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/DemoSlide */ "./src/components/slides/DemoSlide.tsx");
-/* harmony import */ var _slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/DiffingExplanationSlide */ "./src/components/slides/DiffingExplanationSlide.tsx");
-/* harmony import */ var _slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slides/DiffTypesSlide */ "./src/components/slides/DiffTypesSlide.tsx");
-/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
-/* harmony import */ var _slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/JSXSlide */ "./src/components/slides/JSXSlide.tsx");
-/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
-/* harmony import */ var _slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/RealDOMSlide */ "./src/components/slides/RealDOMSlide.tsx");
-/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+/* harmony import */ var _slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/ComponentClassSlide */ "./src/components/slides/ComponentClassSlide.tsx");
+/* harmony import */ var _slides_DemoSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/DemoSlide */ "./src/components/slides/DemoSlide.tsx");
+/* harmony import */ var _slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slides/DiffingExplanationSlide */ "./src/components/slides/DiffingExplanationSlide.tsx");
+/* harmony import */ var _slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slides/DiffTypesSlide */ "./src/components/slides/DiffTypesSlide.tsx");
+/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
+/* harmony import */ var _slides_JSXSlide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/JSXSlide */ "./src/components/slides/JSXSlide.tsx");
+/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
+/* harmony import */ var _slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slides/RealDOMSlide */ "./src/components/slides/RealDOMSlide.tsx");
+/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+
 
 
 
@@ -38,7 +40,7 @@ class App extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Componen
       className: "reveal"
     }, Buzz.jsx("div", {
       className: "slides"
-    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_8__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_9__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_8__["default"], null), Buzz.jsx(_slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
   }
 }
 
@@ -239,6 +241,140 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
       toggleItem: () => this.toggleItem(i),
       removeItem: () => this.removeItem(i)
     }))));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/slides/ComponentClassSlide.tsx":
+/*!*******************************************************!*\
+  !*** ./src/components/slides/ComponentClassSlide.tsx ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RealDOMSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
+
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const BASIC_CODE = `
+export abstract class Component<P, S> {
+
+    protected props: P;
+    protected state: S;
+
+    protected setState(updater: ((s: S) => S)) { }
+
+    // the render function each component has to implement
+    public abstract render(): VDOMNode
+}
+`;
+const PRIVATE_PROPERTIES_CODE = `
+export abstract class Component<P, S> {
+
+    protected props: P;
+    protected state: S;
+
+    private currentRootNode: VDOMNode;
+    private mountedElement: Element | Text | null;
+
+    protected setState(updater: ((s: S) => S)) { }
+
+    // the render function each component has to implement
+    public abstract render(): VDOMNode
+}
+`;
+const LIFE_CYCLE_HOOKS_CODE = `
+export abstract class Component<P, S> {
+
+    protected props: P;
+    protected state: S;
+
+    private currentRootNode: VDOMNode;
+    private mountedElement: Element | Text | null;
+
+    protected setState(updater: ((s: S) => S)) { }
+
+    // life-cycle hooks
+    public componentDidMount() { }
+    public componentWillReceiveProps(props: P, state: S): S { return state }
+    public componentDidUpdate() { }
+    public componentWillUnmount() { }
+
+    // the render function each component has to implement
+    public abstract render(): VDOMNode
+}
+`;
+const FINAL_CLASS_CODE = `
+export abstract class Component<P, S> {
+
+    protected props: P;
+    protected state: S;
+
+    private currentRootNode: VDOMNode;
+    private mountedElement: Element | Text | null;
+
+    protected setState(updater: ((s: S) => S)) { }
+
+    // called when the mounted element recieves new props
+    public setProps(props: P): VDOMNodeUpdater { }
+
+    // called when mounting the element to generate the first VDOM state
+    public initProps(props: P): VDOMNode { }
+
+    // called when the component is mounted in the real DOM
+    public notifyMounted(elem: Element | Text) { }
+
+    // called when the component will be unmounted in the real DOM
+    public unmount() { }
+
+    // life-cycle hooks
+    public componentDidMount() { }
+    public componentWillReceiveProps(props: P, state: S): S { return state }
+    public componentDidUpdate() { }
+    public componentWillUnmount() { }
+
+    // the render function each component has to implement
+    public abstract render(): VDOMNode
+}
+`;
+class RealDOMSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Wait... ! ", Buzz.jsx("span", {
+      className: "fragment"
+    }, "I though there were components in React"))), Buzz.jsx("section", null, Buzz.jsx("img", {
+      src: "./public/rendering-workflow.svg",
+      alt: ""
+    })), Buzz.jsx("section", null, Buzz.jsx("img", {
+      src: "./public/component-architecture.svg",
+      alt: ""
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: BASIC_CODE,
+      lineHighlights: "1-10|3-4|9|6"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: PRIVATE_PROPERTIES_CODE,
+      lineHighlights: "6-7"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: LIFE_CYCLE_HOOKS_CODE,
+      lineHighlights: "11-15"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: FINAL_CLASS_CODE,
+      lineHighlights: "11-12|14-15|17-18|20-21"
+    })));
   }
 }
 
@@ -495,7 +631,7 @@ class DiffExplanationSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MO
       src: "./public/html-tree-example-step-6.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."
     }), Buzz.jsx("img", {
-      className: "fragment fade-in-then-out",
+      className: "fragment fade-in",
       "data-fragment-index": "8",
       src: "./public/html-tree-example-step-7.svg",
       alt: "A tree representing the structure of the HTML with the changes we want to make."

@@ -41,7 +41,7 @@ export default class DiffExplanationSlide extends Component {
                         <img className="fragment fade-in-then-out" data-fragment-index="5" src="./public/html-tree-example-step-4.svg" alt="A tree representing the structure of the HTML with the changes we want to make." />
                         <img className="fragment fade-in-then-out" data-fragment-index="6" src="./public/html-tree-example-step-5.svg" alt="A tree representing the structure of the HTML with the changes we want to make." />
                         <img className="fragment fade-in-then-out" data-fragment-index="7" src="./public/html-tree-example-step-6.svg" alt="A tree representing the structure of the HTML with the changes we want to make." />
-                        <img className="fragment fade-in-then-out" data-fragment-index="8" src="./public/html-tree-example-step-7.svg" alt="A tree representing the structure of the HTML with the changes we want to make." />
+                        <img className="fragment fade-in" data-fragment-index="8" src="./public/html-tree-example-step-7.svg" alt="A tree representing the structure of the HTML with the changes we want to make." />
                     </div>
 
                     <ul style="font-size: 0.8em; padding-top:0.25em;">
