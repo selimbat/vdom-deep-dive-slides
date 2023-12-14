@@ -12,11 +12,11 @@ export default class DigDeeperSlide extends Component {
                 </section>
                 <section>
                     <ul>
-                        <li className="fragment slide-left">Children reconciliation</li>
-                        <li className="fragment slide-left">Keeping track of references to DOM element and component instances</li>
-                        <li className="fragment slide-left">JSX support</li>
-                        <li className="fragment slide-left">Asynchronous (non-blocking) diffing and rendering</li>
-                        <li className="fragment slide-left">Functional components and hooks (Fiber tree)</li>
+                        <li className="fragment fade-left">Children reconciliation</li>
+                        <li className="fragment fade-left">Keeping track of references to DOM element and component instances</li>
+                        <li className="fragment fade-left">JSX support</li>
+                        <li className="fragment fade-left">Asynchronous (non-blocking) diffing and rendering</li>
+                        <li className="fragment fade-left">Functional components and hooks (Fiber tree)</li>
                     </ul>
                     <p className="fragment">
                         Check out{" "}
