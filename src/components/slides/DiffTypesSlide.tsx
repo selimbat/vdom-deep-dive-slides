@@ -10,7 +10,6 @@ export type SkipOperation = {
 export type ReplaceOperation = {
     kind: 'replace';
     newNode: VDOMNode;
-    callback?: (elem: Element | Text) => void;
 }
 
 export type AttributesUpdater = {

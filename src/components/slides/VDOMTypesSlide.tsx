@@ -43,7 +43,7 @@ export default class VDOMTypesSlide extends Component {
                     <h2>In the beginning there were types</h2>
                 </section>
                 <section>
-                    Lets consider this HTML structure
+                    Let's consider this HTML structure
                     <CodeBlock code={EXAMPLE_HTML} />
                 </section>
                 <section>

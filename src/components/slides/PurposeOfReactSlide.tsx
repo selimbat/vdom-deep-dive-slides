@@ -22,7 +22,7 @@ export default class PurposeOfReactSlide extends Component {
                 </section>
                 <section>
                     <h2>Why do we use React at all?</h2>
-                    <p>What does React have to offer that vanilla JS doesn't ?</p>
+                    <p>What does React have to offer that vanilla JS doesn't?</p>
                     <br />
                     <ul>
                         <li className="fragment fade-left">
