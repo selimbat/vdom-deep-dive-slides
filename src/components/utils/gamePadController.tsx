@@ -1,3 +1,6 @@
+// This code snippet is basically copy-pasted from here:
+// https://gist.github.com/jakearchibald/e4a2a63a5b9adf2580d0667c70dcaf82
+
 export async function gamepadButtonPress(listeners: {
     [button: number]: () => void;
 }): Promise<void> {
