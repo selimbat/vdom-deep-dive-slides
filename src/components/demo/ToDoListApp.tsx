@@ -41,10 +41,11 @@ export default class ToDoListApp extends Component<{}, ToDoState> {
                 flexDirection: 'column',
                 alignItems: 'center',
                 fontSize: '1.4rem',
+                transform: 'translateY(-4rem)',
             },
             toDoList: {
                 listStyleType: 'none',
-                padding: '0',
+                padding: '0.75rem 0 0 0',
                 width: '30rem',
             }
         }

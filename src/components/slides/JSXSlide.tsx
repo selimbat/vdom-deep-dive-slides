@@ -66,6 +66,32 @@ export default class App extends Component {
 }
 `;
 
+const FUN_FACT_JSX_BEFORE_CODE = `
+export default class App extends Component {
+    render() {
+        return (
+            <div id="root">
+                <MyComponent>
+                <myComponent> {/* Why is this forbidden? */}
+            </div>
+        );
+    }
+}
+`;
+
+const FUN_FACT_JSX_AFTER_CODE = `
+export default class App extends Component {
+    render() {
+        return React.createElement("div",
+            { id: "root" },
+            React.createElement(MyComponent, null),
+            React.createElement("myComponent", null),
+        );
+    }
+}
+`;
+
+
 const JSX_FUNCTIONS_CODE_1 = `
 const createText = (value: string | number | boolean, key: string = ''): VDOMText => ({
 });
@@ -141,6 +167,20 @@ export default class JSXSlide extends Component {
                 <section data-auto-animate>
                     But we want this:
                     <CodeBlock code={POST_JSX_PROCESS_CUSTOM_LIB_CODE} />
+                </section>
+                <section>
+                    <h2>Fun fact</h2>
+                </section>
+                <section data-auto-animate>
+                    <h3>Fun fact</h3>
+                    <CodeBlock code={FUN_FACT_JSX_BEFORE_CODE} />
+                </section>
+                <section data-auto-animate>
+                    <h3>Fun fact</h3>
+                    <CodeBlock code={FUN_FACT_JSX_AFTER_CODE} />
+                </section>
+                <section>
+                    So let's implement createElement
                 </section>
                 <section data-auto-animate>
                     <CodeBlock

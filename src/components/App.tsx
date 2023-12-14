@@ -1,8 +1,12 @@
 import { Component } from "@selimbat/vdom-deep-dive";
+import AdaptingCodeBaseSlide from "./slides/AdaptingCodeBaseSlide";
 import ComponentClassSlide from "./slides/ComponentClassSlide";
+import ComponentUpdateSlide from "./slides/ComponentUpdateSlide";
 import DemoSlide from "./slides/DemoSlide";
 import DiffExplanationSlide from "./slides/DiffingExplanationSlide";
 import DiffTypesSlide from "./slides/DiffTypesSlide";
+import DigDeeperSlide from "./slides/DigDeeperSlide";
+import EndSlide from "./slides/EndSlide";
 import IntroSlide from "./slides/IntroSlide";
 import JSXSlide from "./slides/JSXSlide";
 import PurposeOfReactSlide from "./slides/PurposeOfReactSlide";
@@ -23,7 +27,11 @@ export default class App extends Component {
                     <DiffTypesSlide />
                     <RealDOMSlide />
                     <ComponentClassSlide />
+                    <AdaptingCodeBaseSlide />
+                    <ComponentUpdateSlide />
                     <DemoSlide />
+                    <DigDeeperSlide />
+                    <EndSlide />
                 </div>
             </div>
         )

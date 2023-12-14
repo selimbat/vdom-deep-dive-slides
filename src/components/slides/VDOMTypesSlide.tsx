@@ -18,7 +18,7 @@ export type VDOMAttributes = {
     [_: string]: string | number | boolean | ((_: any) => any);
 };    
 
-export interface VDOMElement {
+export type VDOMElement = {
     kind: 'element';
     tagname: string;
     props?: VDOMAttributes;
@@ -26,7 +26,7 @@ export interface VDOMElement {
     key: string | number;
 };    
 
-export interface VDOMText {
+export type VDOMText = {
     kind: 'text';
     value: string;
     key: string | number;

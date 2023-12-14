@@ -3,11 +3,11 @@ import CodeBlock from "components/utils/CodeBlock";
 const Buzz = require('@selimbat/vdom-deep-dive');
 
 const NODE_CODE = `
-export interface SkipOperation {
+export type SkipOperation = {
     kind: 'skip';
 }
 
-export interface ReplaceOperation {
+export type ReplaceOperation = {
     kind: 'replace';
     newNode: VDOMNode;
     callback?: (elem: Element | Text) => void;
@@ -18,7 +18,7 @@ export type AttributesUpdater = {
     remove: string[];
 }
 
-export interface UpdateOperation {
+export type UpdateOperation = {
     kind: 'update';
     attributes: AttributesUpdater;
     children: ChildUpdater[];
@@ -31,11 +31,11 @@ export type VDOMNodeUpdater =
 `;
 
 const CHILDREN_CODE = `
-export interface RemoveOperation {
+export type RemoveOperation = {
     kind: 'remove';
 }
 
-export interface InsertOperation {
+export type InsertOperation = {
     kind: 'insert';
     node: VDOMNode;
 }

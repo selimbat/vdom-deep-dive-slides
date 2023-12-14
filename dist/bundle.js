@@ -14,15 +14,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/ComponentClassSlide */ "./src/components/slides/ComponentClassSlide.tsx");
-/* harmony import */ var _slides_DemoSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/DemoSlide */ "./src/components/slides/DemoSlide.tsx");
-/* harmony import */ var _slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slides/DiffingExplanationSlide */ "./src/components/slides/DiffingExplanationSlide.tsx");
-/* harmony import */ var _slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slides/DiffTypesSlide */ "./src/components/slides/DiffTypesSlide.tsx");
-/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
-/* harmony import */ var _slides_JSXSlide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/JSXSlide */ "./src/components/slides/JSXSlide.tsx");
-/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
-/* harmony import */ var _slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slides/RealDOMSlide */ "./src/components/slides/RealDOMSlide.tsx");
-/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+/* harmony import */ var _slides_AdaptingCodeBaseSlide__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slides/AdaptingCodeBaseSlide */ "./src/components/slides/AdaptingCodeBaseSlide.tsx");
+/* harmony import */ var _slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./slides/ComponentClassSlide */ "./src/components/slides/ComponentClassSlide.tsx");
+/* harmony import */ var _slides_ComponentUpdateSlide__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./slides/ComponentUpdateSlide */ "./src/components/slides/ComponentUpdateSlide.tsx");
+/* harmony import */ var _slides_DemoSlide__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./slides/DemoSlide */ "./src/components/slides/DemoSlide.tsx");
+/* harmony import */ var _slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./slides/DiffingExplanationSlide */ "./src/components/slides/DiffingExplanationSlide.tsx");
+/* harmony import */ var _slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./slides/DiffTypesSlide */ "./src/components/slides/DiffTypesSlide.tsx");
+/* harmony import */ var _slides_DigDeeperSlide__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./slides/DigDeeperSlide */ "./src/components/slides/DigDeeperSlide.tsx");
+/* harmony import */ var _slides_EndSlide__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./slides/EndSlide */ "./src/components/slides/EndSlide.tsx");
+/* harmony import */ var _slides_IntroSlide__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./slides/IntroSlide */ "./src/components/slides/IntroSlide.tsx");
+/* harmony import */ var _slides_JSXSlide__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./slides/JSXSlide */ "./src/components/slides/JSXSlide.tsx");
+/* harmony import */ var _slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./slides/PurposeOfReactSlide */ "./src/components/slides/PurposeOfReactSlide.tsx");
+/* harmony import */ var _slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./slides/RealDOMSlide */ "./src/components/slides/RealDOMSlide.tsx");
+/* harmony import */ var _slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./slides/VDOMTypesSlide */ "./src/components/slides/VDOMTypesSlide.tsx");
+
+
+
+
 
 
 
@@ -40,7 +48,7 @@ class App extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Componen
       className: "reveal"
     }, Buzz.jsx("div", {
       className: "slides"
-    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_9__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_8__["default"], null), Buzz.jsx(_slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+    }, Buzz.jsx(_slides_IntroSlide__WEBPACK_IMPORTED_MODULE_9__["default"], null), Buzz.jsx(_slides_PurposeOfReactSlide__WEBPACK_IMPORTED_MODULE_11__["default"], null), Buzz.jsx(_slides_VDOMTypesSlide__WEBPACK_IMPORTED_MODULE_13__["default"], null), Buzz.jsx(_slides_JSXSlide__WEBPACK_IMPORTED_MODULE_10__["default"], null), Buzz.jsx(_slides_DiffingExplanationSlide__WEBPACK_IMPORTED_MODULE_5__["default"], null), Buzz.jsx(_slides_DiffTypesSlide__WEBPACK_IMPORTED_MODULE_6__["default"], null), Buzz.jsx(_slides_RealDOMSlide__WEBPACK_IMPORTED_MODULE_12__["default"], null), Buzz.jsx(_slides_ComponentClassSlide__WEBPACK_IMPORTED_MODULE_2__["default"], null), Buzz.jsx(_slides_AdaptingCodeBaseSlide__WEBPACK_IMPORTED_MODULE_1__["default"], null), Buzz.jsx(_slides_ComponentUpdateSlide__WEBPACK_IMPORTED_MODULE_3__["default"], null), Buzz.jsx(_slides_DemoSlide__WEBPACK_IMPORTED_MODULE_4__["default"], null), Buzz.jsx(_slides_DigDeeperSlide__WEBPACK_IMPORTED_MODULE_7__["default"], null), Buzz.jsx(_slides_EndSlide__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
   }
 }
 
@@ -97,7 +105,7 @@ class NewItemForm extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.label),
       key: "form-label",
       for: "form-input"
-    }, "My To Do App"), Buzz.jsx("input", {
+    }, "My To Do Buzz App"), Buzz.jsx("input", {
       style: (0,_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.makeStyle)(styles.input),
       key: "form-input",
       id: "form-input",
@@ -210,11 +218,12 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        fontSize: '1.4rem'
+        fontSize: '1.4rem',
+        transform: 'translateY(-4rem)'
       },
       toDoList: {
         listStyleType: 'none',
-        padding: '0',
+        padding: '0.75rem 0 0 0',
         width: '30rem'
       }
     };
@@ -241,6 +250,230 @@ class ToDoListApp extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.
       toggleItem: () => this.toggleItem(i),
       removeItem: () => this.removeItem(i)
     }))));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/slides/AdaptingCodeBaseSlide.tsx":
+/*!*********************************************************!*\
+  !*** ./src/components/slides/AdaptingCodeBaseSlide.tsx ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AdaptingCodeBaseSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
+
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const COMPONENT_TYPE_CODE_0 = `
+export type VDOMNode =
+    | VDOMElement
+    | VDOMText;
+`;
+const COMPONENT_TYPE_CODE_1 = `
+export type VDOMNode =
+    | VDOMComponent
+    | VDOMElement
+    | VDOMText;
+`;
+const COMPONENT_TYPE_CODE_2 = `
+export type VDOMComponent<P extends ComponentProps = ComponentProps> = {
+    kind: 'component';
+    key: string | number;
+    instance: Component | null;
+    props: P;
+    component: { new(): Component };
+}
+
+export type VDOMNode =
+    | VDOMComponent
+    | VDOMElement
+    | VDOMText;
+`;
+const RENDER_ELEMENT_CODE_0 = `
+const renderElement = (rootNode: VDOMNode): Element | Text => {
+
+    // create a Text DOM element from a VDOMText
+
+    // create a DOM element from a VDOMElement 
+}
+`;
+const RENDER_ELEMENT_CODE_1 = `
+const renderElement = (rootNode: VDOMNode): Element | Text => {
+
+    // create a Text DOM element from a VDOMText
+
+    if (rootNode.kind === 'component') {
+        let nodeToRender: VDOMNode;
+        if (rootNode.instance) {
+            // re-rendering an already existing component
+            nodeToRender = rootNode.instance.render();
+        } else {
+            // first render of a component
+            rootNode.instance = new rootNode.component();
+            nodeToRender = rootNode.instance.initProps(rootNode.props);
+        }
+
+        const elem = renderElement(nodeToRender);
+        rootNode.instance.notifyMounted(elem);
+        return elem;
+    }
+
+    // create a DOM element from a VDOMElement 
+}
+`;
+const CREATE_DIFF_CODE_0 = `
+export const createDiff = (oldNode: VDOMNode, newNode: VDOMNode): VDOMNodeUpdater => {
+
+    // Handle diff for text nodes.
+
+    // Handle diff for VDOMElements.
+}
+`;
+const CREATE_DIFF_CODE_1 = `
+export const createDiff = (oldNode: VDOMNode, newNode: VDOMNode): VDOMNodeUpdater => {
+
+    // Handle diff for text nodes.
+
+    if (
+        oldNode.kind == 'component' &&
+        newNode.kind == 'component' &&
+        oldNode.component == newNode.component &&
+        oldNode.instance
+    ) {
+        // Old node and new node are the same component.
+        newNode.instance = oldNode.instance
+        if (newNode.props == oldNode.props) {
+            return skip()
+        }
+        return newNode.instance.setProps(newNode.props);
+    }
+
+    // Handle diff for VDOMElements.
+}
+`;
+const CREATE_DIFF_CODE_2 = `
+export const createDiff = (oldNode: VDOMNode, newNode: VDOMNode): VDOMNodeUpdater => {
+
+    // Handle diff for text nodes.
+
+    if (
+        oldNode.kind == 'component' &&
+        newNode.kind == 'component' &&
+        oldNode.component == newNode.component &&
+        oldNode.instance
+    ) {
+        // Old node and new node are the same component.
+        newNode.instance = oldNode.instance
+        if (newNode.props == oldNode.props) {
+            return skip()
+        }
+        return newNode.instance.setProps(newNode.props);
+    }
+
+    if (newNode.kind == 'component') {
+        // New node is a component and is unrelated with the old node.
+        newNode.instance == new newNode.component()
+        return replace(newNode.instance!.initProps(newNode.props));
+    }
+
+    // Handle diff for VDOMElements.
+}
+`;
+const CREATE_DIFF_CODE_3 = `
+export const createDiff = (oldNode: VDOMNode, newNode: VDOMNode): VDOMNodeUpdater => {
+
+    // Handle diff for text nodes.
+
+    if (
+        oldNode.kind == 'component' &&
+        newNode.kind == 'component' &&
+        oldNode.component == newNode.component &&
+        oldNode.instance
+    ) {
+        // Old node and new node are the same component.
+        newNode.instance = oldNode.instance
+        if (newNode.props == oldNode.props) {
+            return skip()
+        }
+        return newNode.instance.setProps(newNode.props);
+    }
+
+    if (newNode.kind == 'component') {
+        // New node is a component and is unrelated with the old node.
+        newNode.instance == new newNode.component()
+        return replace(newNode.instance!.initProps(newNode.props));
+    }
+
+    if (oldNode.kind == 'component') {
+        // And don't forget to clean up
+        oldNode.instance?.unmount()
+        oldNode.instance = null
+        return replace(newNode);
+    }
+
+    // Handle diff for VDOMElements.
+}
+`;
+class AdaptingCodeBaseSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Accounting for components in our code base")), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "A VDOM node can now be a component as well", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: COMPONENT_TYPE_CODE_0,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "A VDOM node can now be a component as well", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: COMPONENT_TYPE_CODE_1,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "A VDOM node can now be a component as well", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: COMPONENT_TYPE_CODE_2,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "Adapt our renderElement function", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: RENDER_ELEMENT_CODE_0,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: RENDER_ELEMENT_CODE_1,
+      lang: "typescript",
+      lineHighlights: "1-22|7-9|10-14|15-18"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "Account for components in the diffing function", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: CREATE_DIFF_CODE_0,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: CREATE_DIFF_CODE_1,
+      lang: "typescript",
+      lineHighlights: "5-17"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: CREATE_DIFF_CODE_2,
+      lang: "typescript",
+      lineHighlights: "19-23"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: CREATE_DIFF_CODE_3,
+      lang: "typescript",
+      lineHighlights: "25-30"
+    })));
   }
 }
 
@@ -380,6 +613,135 @@ class RealDOMSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__
 
 /***/ }),
 
+/***/ "./src/components/slides/ComponentUpdateSlide.tsx":
+/*!********************************************************!*\
+  !*** ./src/components/slides/ComponentUpdateSlide.tsx ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ComponentUpdateSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
+
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+const SET_STATE_CODE_0 = `
+export abstract class Component<P, S> {
+
+    protected setState(updater: ((s: S) => S)) {
+    }
+}
+`;
+const SET_STATE_CODE_1 = `
+export abstract class Component<P, S> {
+    
+    protected setState(updater: ((s: S) => S)) {
+        if (!this.mountedElement) {
+            throw new Error("Updating an unmounted component");
+        }
+        const newState = updater(this.state);
+        if (newState !== this.state) {
+            this.state = newState;
+            const diff = this.getUpdateDiff();
+            applyDiff(this.mountedElement, diff);
+        }
+    }
+}
+`;
+const SET_STATE_CODE_2 = `
+export abstract class Component<P, S> {
+    
+    private getUpdateDiff(): VDOMNodeUpdater {
+        const newRootNode = this.render();
+        const diff = createDiff(this.currentRootNode, newRootNode);
+        this.currentRootNode = newRootNode;
+        requestAnimationFrame(() => this.componentDidUpdate());
+        return diff;
+    }
+
+    protected setState(updater: ((s: S) => S)) {
+        if (!this.mountedElement) {
+            throw new Error("Updating an unmounted component");
+        }
+        const newState = updater(this.state);
+        if (newState !== this.state) {
+            this.state = newState;
+            const diff = this.getUpdateDiff();
+            applyDiff(this.mountedElement, diff);
+        }
+    }
+}
+`;
+const SET_PROPS_CODE_0 = `
+export abstract class Component<P, S> {
+    
+    private getUpdateDiff(): VDOMNodeUpdater { /* */ }
+
+    protected setState(updater: ((s: S) => S)) { /* */ }
+
+    public setProps(props: P): VDOMNodeUpdater {
+    }
+}
+`;
+const SET_PROPS_CODE_1 = `
+export abstract class Component<P, S> {
+    
+    private getUpdateDiff(): VDOMNodeUpdater { /* */ }
+
+    protected setState(updater: ((s: S) => S)) { /* */ }
+
+    public setProps(props: P): VDOMNodeUpdater {
+        if (!this.mountedElement) {
+            throw new Error("Setting the props of an unmounted component");
+        }
+        if (props !== this.props) {
+            this.props = props;
+            return this.getUpdateDiff();
+        }
+        return skip();
+    }
+}
+`;
+class ComponentUpdateSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Finally make the Components reactive")), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Component updates with state changes")), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SET_STATE_CODE_0,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SET_STATE_CODE_1,
+      lang: "typescript",
+      lineHighlights: "1-14|7-12|10"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SET_STATE_CODE_2,
+      lang: "typescript",
+      lineHighlights: "3-9|7"
+    })), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Component updates with props changes")), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SET_PROPS_CODE_0,
+      lang: "typescript"
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: SET_PROPS_CODE_1,
+      lang: "typescript"
+    })));
+  }
+}
+
+/***/ }),
+
 /***/ "./src/components/slides/DemoSlide.tsx":
 /*!*********************************************!*\
   !*** ./src/components/slides/DemoSlide.tsx ***!
@@ -394,15 +756,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 /* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/demo/ToDoListApp */ "./src/components/demo/ToDoListApp.tsx");
+/* harmony import */ var components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/utils/CodeBlock */ "./src/components/utils/CodeBlock.tsx");
+
 
 
 const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const memeAltText = "Xzibit from Pimp My Ride meme saying 'Yo dawg I heard you like React so we put React in your React so you can React while you React'";
+const APP_COMPONENT_CODE = `
+export default class App extends Component {
+    render() {
+        return (
+            <div className="reveal">
+                <div className="slides">
+                    <IntroSlide />
+                    <PurposeOfReactSlide />
+                    <VDOMTypesSlide />
+                    <JSXSlide />
+                    <DiffExplanationSlide />
+                    <DiffTypesSlide />
+                    <RealDOMSlide />
+                    <ComponentClassSlide />
+                    <AdaptingCodeBaseSlide />
+                    <ComponentUpdateSlide />
+                    <DemoSlide />
+                    <DigDeeperSlide />
+                    <EndSlide />
+                </div>
+            </div>
+        )
+    }
+}`;
 class DemoSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Demo time")), Buzz.jsx("section", null, Buzz.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null)), Buzz.jsx("section", null, Buzz.jsx("img", {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "And that's it"), Buzz.jsx("p", {
+      className: "fragment"
+    }, "We have built a stateful and reactive UI library"), Buzz.jsx("p", {
+      className: "fragment"
+    }, "Let's try it out!")), Buzz.jsx("section", null, Buzz.jsx("p", null, "Actually, ", Buzz.jsx("span", {
+      className: "fragment"
+    }, "we already did")), Buzz.jsx("p", {
+      className: "fragment"
+    }, "This whole presentation a is Buzz App"), Buzz.jsx("p", {
+      className: "fragment"
+    }, "And if this is an app,", Buzz.jsx("span", {
+      className: "fragment"
+    }, " we can do anything in the slides"))), Buzz.jsx("section", null, Buzz.jsx(components_demo_ToDoListApp__WEBPACK_IMPORTED_MODULE_1__["default"], null)), Buzz.jsx("section", null, Buzz.jsx("img", {
       src: "./public/pimp_my_react.jpg",
       alt: memeAltText
+    })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, "And it actually looks a lot like React code", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      code: APP_COMPONENT_CODE,
+      lang: "typescript"
     })));
   }
 }
@@ -427,11 +832,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 const NODE_CODE = `
-export interface SkipOperation {
+export type SkipOperation = {
     kind: 'skip';
 }
 
-export interface ReplaceOperation {
+export type ReplaceOperation = {
     kind: 'replace';
     newNode: VDOMNode;
     callback?: (elem: Element | Text) => void;
@@ -442,7 +847,7 @@ export type AttributesUpdater = {
     remove: string[];
 }
 
-export interface UpdateOperation {
+export type UpdateOperation = {
     kind: 'update';
     attributes: AttributesUpdater;
     children: ChildUpdater[];
@@ -454,11 +859,11 @@ export type VDOMNodeUpdater =
     | ReplaceOperation
 `;
 const CHILDREN_CODE = `
-export interface RemoveOperation {
+export type RemoveOperation = {
     kind: 'remove';
 }
 
-export interface InsertOperation {
+export type InsertOperation = {
     kind: 'insert';
     node: VDOMNode;
 }
@@ -664,6 +1069,68 @@ class DiffExplanationSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MO
 
 /***/ }),
 
+/***/ "./src/components/slides/DigDeeperSlide.tsx":
+/*!**************************************************!*\
+  !*** ./src/components/slides/DigDeeperSlide.tsx ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ DigDeeperSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class DigDeeperSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "To dig deeper"), Buzz.jsx("p", {
+      className: "fragment"
+    }, "Things this presentation didn't cover.")), Buzz.jsx("section", null, Buzz.jsx("ul", null, Buzz.jsx("li", {
+      className: "fragment slide-left"
+    }, "Children reconciliation"), Buzz.jsx("li", {
+      className: "fragment slide-left"
+    }, "Keeping track of references to DOM element and component instances"), Buzz.jsx("li", {
+      className: "fragment slide-left"
+    }, "JSX support"), Buzz.jsx("li", {
+      className: "fragment slide-left"
+    }, "Asynchronous (non-blocking) diffing and rendering"), Buzz.jsx("li", {
+      className: "fragment slide-left"
+    }, "Functional components and hooks (Fiber tree)")), Buzz.jsx("p", {
+      className: "fragment"
+    }, "Check out", " ", Buzz.jsx("a", {
+      href: "https://itnext.io/creating-our-own-react-from-scratch-82dd6356676d"
+    }, "the article by Wim Jongeneel"), " ", "that inspired this presentation.")));
+  }
+}
+
+/***/ }),
+
+/***/ "./src/components/slides/EndSlide.tsx":
+/*!********************************************!*\
+  !*** ./src/components/slides/EndSlide.tsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ EndSlide)
+/* harmony export */ });
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+/* harmony import */ var _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__);
+
+const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
+class EndSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
+  render() {
+    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Thank you"));
+  }
+}
+
+/***/ }),
+
 /***/ "./src/components/slides/IntroSlide.tsx":
 /*!**********************************************!*\
   !*** ./src/components/slides/IntroSlide.tsx ***!
@@ -681,9 +1148,11 @@ __webpack_require__.r(__webpack_exports__);
 const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class IntroSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Building your own React from scratch"), Buzz.jsx("p", null, "By Selim Tirellil"), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("figure", {
-      style: "font-size:large;"
-    }, Buzz.jsx("blockquote", null, Buzz.jsx("p", null, "Why bother with tools when you can do it with Javascript?")), Buzz.jsx("figcaption", null, "\u2014Karl Marx, ", Buzz.jsx("cite", null, Buzz.jsx("em", null, "Everything JS")))));
+    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Building your own React from scratch"), Buzz.jsx("p", null, "By Selim Tirellil"), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("br", null), Buzz.jsx("p", {
+      className: "fragment"
+    }, "Inspired by an", " ", Buzz.jsx("a", {
+      href: "https://itnext.io/creating-our-own-react-from-scratch-82dd6356676d"
+    }, "article by Wim Jongeneel"), "."));
   }
 }
 
@@ -768,6 +1237,29 @@ export default class App extends Component {
     }
 }
 `;
+const FUN_FACT_JSX_BEFORE_CODE = `
+export default class App extends Component {
+    render() {
+        return (
+            <div id="root">
+                <MyComponent>
+                <myComponent> {/* Why is this forbidden? */}
+            </div>
+        );
+    }
+}
+`;
+const FUN_FACT_JSX_AFTER_CODE = `
+export default class App extends Component {
+    render() {
+        return React.createElement("div",
+            { id: "root" },
+            React.createElement(MyComponent, null),
+            React.createElement("myComponent", null),
+        );
+    }
+}
+`;
 const JSX_FUNCTIONS_CODE_1 = `
 const createText = (value: string | number | boolean, key: string = ''): VDOMText => ({
 });
@@ -835,7 +1327,15 @@ class JSXSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Com
       "data-auto-animate": true
     }, "But we want this:", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: POST_JSX_PROCESS_CUSTOM_LIB_CODE
+    })), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Fun fact")), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx("h3", null, "Fun fact"), Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: FUN_FACT_JSX_BEFORE_CODE
     })), Buzz.jsx("section", {
+      "data-auto-animate": true
+    }, Buzz.jsx("h3", null, "Fun fact"), Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+      code: FUN_FACT_JSX_AFTER_CODE
+    })), Buzz.jsx("section", null, "So let's implement createElement"), Buzz.jsx("section", {
       "data-auto-animate": true
     }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: JSX_FUNCTIONS_CODE_1,
@@ -876,13 +1376,19 @@ __webpack_require__.r(__webpack_exports__);
 const Buzz = __webpack_require__(/*! @selimbat/vdom-deep-dive */ "../vdom-deep-dive/dist/index.js");
 class PurposeOfReactSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return Buzz.jsx("section", null, Buzz.jsx("h2", null, "Pourquoi utilise-t-on React ?"), Buzz.jsx("p", null, "Qu'apporte React par rapport \xE0 juste vanilla ?"), Buzz.jsx("br", null), Buzz.jsx("ul", null, Buzz.jsx("li", {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "Why bother coding a UI library?"), Buzz.jsx("ul", null, Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Abstraction du HTML."), Buzz.jsx("li", {
+    }, "Better grasp of the inner workings of our tools"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "Ne g\xE9rer qu'un seul langage au lieu de HTML/CSS/JS."), Buzz.jsx("li", {
+    }, "Understand the revolution reactive libraries & frameworks brought to web development"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "La mise en commun et variabilisation de", Buzz.jsx("br", null), "bouts d'UI devient possible.")));
+    }, "From their limitations, try to foresee the next industry shift?"))), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Why do we use React at all?"), Buzz.jsx("p", null, "What does React have to offer that vanilla JS doesn't ?"), Buzz.jsx("br", null), Buzz.jsx("ul", null, Buzz.jsx("li", {
+      className: "fragment fade-left"
+    }, "HTML abstraction."), Buzz.jsx("li", {
+      className: "fragment fade-left"
+    }, "Dealing with only one language instead of HTML/CSS/JS."), Buzz.jsx("li", {
+      className: "fragment fade-left"
+    }, "Sharing and customizing bits of UI becomes", Buzz.jsx("br", null), "a lot easier."))));
   }
 }
 
@@ -1043,7 +1549,7 @@ export type VDOMAttributes = {
     [_: string]: string | number | boolean | ((_: any) => any);
 };    
 
-export interface VDOMElement {
+export type VDOMElement = {
     kind: 'element';
     tagname: string;
     props?: VDOMAttributes;
@@ -1051,7 +1557,7 @@ export interface VDOMElement {
     key: string | number;
 };    
 
-export interface VDOMText {
+export type VDOMText = {
     kind: 'text';
     value: string;
     key: string | number;

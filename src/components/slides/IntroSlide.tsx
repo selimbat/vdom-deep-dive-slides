@@ -8,12 +8,11 @@ export default class IntroSlide extends Component {
                 <h2>Building your own React from scratch</h2>
                 <p>By Selim Tirellil</p>
                 <br /><br /><br />
-                <figure style="font-size:large;">
-                    <blockquote>
-                        <p>Why bother with tools when you can do it with Javascript?</p>
-                    </blockquote>
-                    <figcaption>—Karl Marx, <cite><em>Everything JS</em></cite></figcaption>
-                </figure>
+                <p className="fragment">
+                    Inspired by an{" "}
+                    <a href="https://itnext.io/creating-our-own-react-from-scratch-82dd6356676d">article by Wim Jongeneel</a>
+                    .
+                </p>
             </section>
         )
     }
