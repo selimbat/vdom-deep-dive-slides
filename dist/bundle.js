@@ -840,7 +840,6 @@ export type SkipOperation = {
 export type ReplaceOperation = {
     kind: 'replace';
     newNode: VDOMNode;
-    callback?: (elem: Element | Text) => void;
 }
 
 export type AttributesUpdater = {
@@ -1090,15 +1089,15 @@ class DigDeeperSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0
     return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "To dig deeper"), Buzz.jsx("p", {
       className: "fragment"
     }, "Things this presentation didn't cover.")), Buzz.jsx("section", null, Buzz.jsx("ul", null, Buzz.jsx("li", {
-      className: "fragment slide-left"
+      className: "fragment fade-left"
     }, "Children reconciliation"), Buzz.jsx("li", {
-      className: "fragment slide-left"
+      className: "fragment fade-left"
     }, "Keeping track of references to DOM element and component instances"), Buzz.jsx("li", {
-      className: "fragment slide-left"
+      className: "fragment fade-left"
     }, "JSX support"), Buzz.jsx("li", {
-      className: "fragment slide-left"
+      className: "fragment fade-left"
     }, "Asynchronous (non-blocking) diffing and rendering"), Buzz.jsx("li", {
-      className: "fragment slide-left"
+      className: "fragment fade-left"
     }, "Functional components and hooks (Fiber tree)")), Buzz.jsx("p", {
       className: "fragment"
     }, "Check out", " ", Buzz.jsx("a", {
@@ -1383,7 +1382,7 @@ class PurposeOfReactSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MOD
       className: "fragment fade-left"
     }, "Understand the revolution reactive libraries & frameworks brought to web development"), Buzz.jsx("li", {
       className: "fragment fade-left"
-    }, "From their limitations, try to foresee the next industry shift?"))), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Why do we use React at all?"), Buzz.jsx("p", null, "What does React have to offer that vanilla JS doesn't ?"), Buzz.jsx("br", null), Buzz.jsx("ul", null, Buzz.jsx("li", {
+    }, "From their limitations, try to foresee the next industry shift?"))), Buzz.jsx("section", null, Buzz.jsx("h2", null, "Why do we use React at all?"), Buzz.jsx("p", null, "What does React have to offer that vanilla JS doesn't?"), Buzz.jsx("br", null), Buzz.jsx("ul", null, Buzz.jsx("li", {
       className: "fragment fade-left"
     }, "HTML abstraction."), Buzz.jsx("li", {
       className: "fragment fade-left"
@@ -1569,7 +1568,7 @@ export type VDOMNode = VDOMElement | VDOMText;
 `;
 class VDOMTypesSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__.Component {
   render() {
-    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "In the beginning there were types")), Buzz.jsx("section", null, "Lets consider this HTML structure", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    return Buzz.jsx("section", null, Buzz.jsx("section", null, Buzz.jsx("h2", null, "In the beginning there were types")), Buzz.jsx("section", null, "Let's consider this HTML structure", Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: EXAMPLE_HTML
     })), Buzz.jsx("section", null, Buzz.jsx("img", {
       src: "./public/html-tree-example.svg",
@@ -1628,6 +1627,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   gamepadButtonPress: () => (/* binding */ gamepadButtonPress)
 /* harmony export */ });
+// This code snippet is basically copy-pasted from here:
+// https://gist.github.com/jakearchibald/e4a2a63a5b9adf2580d0667c70dcaf82
+
 async function gamepadButtonPress(listeners) {
   const lastStates = [];
   while (true) {
