@@ -73,6 +73,7 @@ export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element 
         return newElem;
     }
 
+    // here diff.kind === 'update'
     for (const att in diff.attributes.remove) {
         elem.removeAttribute(att);
     }
@@ -106,7 +107,7 @@ export default class RealDOMSlide extends Component {
                     <CodeBlock code={IMPLEM_RENDER_ELEMENT_CODE} />
                 </section>
                 <section data-auto-animate>
-                    <CodeBlock code={IMPLEM_APPLY_DIFF_CODE} lineHighlights="20-41" />
+                    <CodeBlock code={IMPLEM_APPLY_DIFF_CODE} lineHighlights="20-42" />
                 </section>
             </section>
         )

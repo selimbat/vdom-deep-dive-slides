@@ -719,7 +719,7 @@ class ComponentUpdateSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MO
     }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: SET_STATE_CODE_1,
       lang: "typescript",
-      lineHighlights: "1-14|7-12|10"
+      lineHighlights: "1-14|8|7-12|10"
     })), Buzz.jsx("section", {
       "data-auto-animate": true
     }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -735,7 +735,8 @@ class ComponentUpdateSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MO
       "data-auto-animate": true
     }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: SET_PROPS_CODE_1,
-      lang: "typescript"
+      lang: "typescript",
+      lineHighlights: "7-16|11"
     })));
   }
 }
@@ -1479,6 +1480,7 @@ export const applyDiff = (elem: Element | Text, diff: VDOMNodeUpdater): Element 
         return newElem;
     }
 
+    // here diff.kind === 'update'
     for (const att in diff.attributes.remove) {
         elem.removeAttribute(att);
     }
@@ -1510,7 +1512,7 @@ class RealDOMSlide extends _selimbat_vdom_deep_dive__WEBPACK_IMPORTED_MODULE_0__
       "data-auto-animate": true
     }, Buzz.jsx(components_utils_CodeBlock__WEBPACK_IMPORTED_MODULE_1__["default"], {
       code: IMPLEM_APPLY_DIFF_CODE,
-      lineHighlights: "20-41"
+      lineHighlights: "20-42"
     })));
   }
 }

@@ -98,7 +98,7 @@ export default class ComponentUpdateSlide extends Component {
                     <CodeBlock code={SET_STATE_CODE_0} lang="typescript" />
                 </section>
                 <section data-auto-animate>
-                    <CodeBlock code={SET_STATE_CODE_1} lang="typescript" lineHighlights="1-14|7-12|10" />
+                    <CodeBlock code={SET_STATE_CODE_1} lang="typescript" lineHighlights="1-14|8|7-12|10" />
                 </section>
                 <section data-auto-animate>
                     <CodeBlock code={SET_STATE_CODE_2} lang="typescript" lineHighlights="3-9|7" />
@@ -110,7 +110,7 @@ export default class ComponentUpdateSlide extends Component {
                     <CodeBlock code={SET_PROPS_CODE_0} lang="typescript" />
                 </section>
                 <section data-auto-animate>
-                    <CodeBlock code={SET_PROPS_CODE_1} lang="typescript" />
+                    <CodeBlock code={SET_PROPS_CODE_1} lang="typescript" lineHighlights="7-16|11" />
                 </section>
             </section>
         )
